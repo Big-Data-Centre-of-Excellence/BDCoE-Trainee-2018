@@ -1,0 +1,22 @@
+Introduction to Git.
+Git: Git is an open source tool used for version control.
+Version control: Version control is something which manages any change in the documents ,files, programs etc.
+	Two types:
+	1)Centralised: uses centeral server, single repository, always internet connection needed, if central server crashed all project data 				will be lossed.
+	2)Distrubuted: data is copied locally, no internet connection need,if central server crashed all data can be restored.
+		Advantages: Compatible, Speed, Open Source, Non linear.
+
+Commands learnt today.
+1) sudo apt -get update:updates installed packages.
+2) sudo apt -get install git : installs git.
+3) git init : creates git repository.
+4) git status : to see the changes.
+5) git add -A : send files to stagging area from working area.
+6) git commit -m "":send files to local repo from stagging area. In "" any msg is written.
+7) git checkout (branchname): to work on existing branch.
+8) git branch -b (branch name): to create branch.
+9) git config --global user.name "username": to add username
+10) git config --global user.email "email": to add email id
+11) git config --global --list : to check email and username
+12) git push (branch name) : push files (**Always check the checkout before pushing).
+

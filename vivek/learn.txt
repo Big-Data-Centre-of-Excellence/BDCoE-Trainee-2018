@@ -1,0 +1,8 @@
+learned about git & github :
+commands :
+git add <file name>
+git commmit -m "<messages goes here>"
+git status
+git log
+git push <server name> <branch name>
+

@@ -1,0 +1,33 @@
+Day 2: git
+
+Version Control Systems: Tools to manage different versions of an app or software by a team of developers/programmers by keeping track of the previous versions and modifications.
+			Types of VCS:
+			1. Centralised: e.g. SVM
+			2. Distributed: e.g. git
+
+Git: Easy and open source distributed VCS.
+	Cheat Sheet:
+	->Initialising a repo: $git init
+	
+	->Configuring user details: $git config --global user.name "user name"
+				    $git config --global user.email "email"
+				    $git config --global --list
+	
+	->Cloning a repo: $git clone <repo address>
+
+	->Adding remote repo: $git remote add <Modified repo name> <repo link>
+
+	->Creating/Migrating another branch: $git checkout -b <branch name>
+
+	->Handling files: Checking status of the files: $git status
+			  Untracked-->Staging: $git add <file name>
+			  		       $git add -A
+			  Staging-->Local Repo: $git commit -m "Descriptive message"
+			  Local Repo-->Remote repo: $push <repo name> <branch name>
+
+	->Getting the logs and other details: $git log
+					      $git diff
+
+	->Migrating to different checkpoints: $git checkout <key/Hash>
+
+	->Getting help for a specific command: $git help <command>

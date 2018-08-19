@@ -1,0 +1,34 @@
+Day 1: Virtualization
+
+Virtualization is the creation of virtual, fake or spoof of something actual. Devices, applications and users interact with the virtual resource as if it were a actual working resource.
+
+->Examples:
+	1.Partitioning a hard drive.
+	2.Installing 2 or more os on the same machine.
+	3.Emulating mobile apps and games on pc
+
+Virtualisation of os:
+
+The aim is to operate 2 or more Operating Systems on the same machine using Virtualization.
+
+	->Basic Architecture for OS Virtualization using a Hypervisor:
+		A Hypervisor can be thought as a software that can virtualize the hardware or software resources. Basically there are 2 types of hypervisors:
+		
+		Type 1 Hypervisor: [Hardware Layer]--> [Hypervisor Layer(Embedded)]--> [Multiple Operating systems]
+					~Virtualises Hardware resources
+					~Generally used in big companies and organizations.
+					~Very Fast
+					~Complicated
+					~If a single virtual machine crash, it does not affect the rest of the guest operation system.
+					~e.g VMware ESX, Microsoft Hyper-V, etc,.
+		
+		Type 2 Hypervisor: [Hardware Layer] --> [Operating System Layer] --> [Hypervisor Layer] --> [Multiple Operating Systems]
+					~Virtualises software resources
+					~Generally used by developers and pc users.
+					~Slow
+					~Easy to operate
+					~If single former os crashes, it will affect other os.
+					~e.g VMware workstation, Oracle VM Virtual Box, etc,.
+
+
+

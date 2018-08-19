@@ -1,0 +1,28 @@
+        * VIRTUALISATION
+
+Definition:- In computing, virtualization means to create a virtual version of a device or resource, such as a server, storage device, network or even an operating system where the framework divides the resource into one or more execution environments.
+
+USES:-
+ * Partition of hard disk.
+ * Multiple Operating System installation.
+
+Applied through:- Hyperviser
+
+Types of Hyperviser:-
+                     1. Type 1:-   OS1  OS2  OS3
+                                         |
+                                     Hyperviser
+                                         |
+                                       DEVICE
+                     It runs directly on top of hardware.
+                     Its speed is high.
+                     
+                     2. Type 2:-   OS1  OS2  OS3
+                                         |
+                                     Hyperviser
+                                         |
+                                         OS
+                                         |
+                                       DEVICE
+                     It operates as an application on top of an existing operating system.
+                     Its speed is comparitively slow.

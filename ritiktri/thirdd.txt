@@ -1,0 +1,118 @@
+VIRTUALISATION
+
+Virtualisation is a concept which is used to reduce the complexity in computing.
+For example:
+On a computer hardware there is an operating system through which various applications are stored.
+Now, on the hardware if we plot a hyperwiser(a kind of operating system) then on this harsware various operating systems can be plotted.
+Thus, two operating systems can be used on the same computer /system.(example-linux and windows)
+
+
+
+SERVER
+
+* If there is a space of of 32 gb on our system and we require only 4 gb then there will be wwstqge of the rest 28 gb . So to save the memory we can distribute the rest 28 gb among different servers 
+  Thus, we can now save memory . But, now there will be a problem of security as one server can try to hack the data of other server or so.
+  This problem is resolved in Type I os virtualisation concept which is fast, secure, and reliable.
+
+
+
+
+SNAPSHOTS
+
+If something goes wrong at a paryicular step then we can go back to previous step if we have taken snapshots until that step.
+
+
+
+FEATURES OF GIT 
+
+Distributed
+Compatible
+Fast in speed
+Open source
+Non-linear
+Security (SHA-256 Encrypting Algorithm)
+
+
+
+GIT COMMANDS
+
+1) git add
+   adds the file to the specific folder
+
+2) git status
+   tells the current status
+
+3) git checkout and git branch
+   used to make new branch 
+
+Similarly, there are many more git commands like git commit,git push origin --,etc.
+
+
+
+
+   
+PWD-Present Working Directory
+
+
+cd.. -returns to parent directory
+
+
+
+TERMINAL COMMANDS
+
+apropos delete 
+apropos remove
+whatis
+whoami
+cat
+alias 
+tar
+
+
+
+LINUX
+
+Invented by Linus Torauld in 1994
+Free
+Open Source
+Distribution-ubuntu,trustX,red hat,Kali(hackiing)
+Capitalisation
+
+
+
+* To install any app we can type:
+  sudo apt install (name of the app)
+
+
+
+*To interrupt ongoing process:
+ press ctrl+z (forceful stop)
+ press ctrl+c (normal stop)
+
+
+
+
+*ctrl+d - end of file
+
+
+
+* if config:
+  tells ip address
+
+
+
+
+APT- Advanced Packaged Tool
+
+
+
+
+; - To use two commands in one line
+
+
+
+
+
+Windows - zip file
+Similarly in Linux there is tar-cvf file and tar xvf file.
+

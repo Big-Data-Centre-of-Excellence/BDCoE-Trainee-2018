@@ -1,0 +1,45 @@
+GIT-
+	Git is a version control system for tracking changes in computer files and coordinating work on those files among multiple people.
+
+VERSION CONTROL SYSTEMS-
+	Tools to manage different versions of an app or software by a team of developers/programmers by keeping track of the previous versions 		and modifications.
+
+TYPES OF VCS-
+	* Centralised: e.g. SVM
+	* Distributed: e.g. git
+
+TYPES OF FILES-
+	* Untracked (Red)
+	* Tracked (Green)
+ 	* Unmodified
+	* Modified
+
+GIT COMMANDS-
+
+	* git config --global user.name "Sarthak"              :-Configure the author name and email address to be used with your commits.
+	* git config --global user.email "srthkvrm@gmail.com"
+	* git config --global --list                           :-To show user details
+	
+	* git init:- Create a new local repository
+
+	* git status:- To know the status of files	
+	
+	* git clone username@host:/path/to/repository:- To get copy of work from server.
+
+	* git push origin <branchname>:- Push the branch to your remote repository, so others can use it.
+
+	* git pull:- Fetch and merge changes on the remote server to your working directory.
+
+	* git checkout -b <branchname>:- Create a new branch and switch to it.
+
+	* git branch :- List all the branches in your repo, and also tell you what branch you're currently in.
+
+	* git merge <branchname> :- To merge a different branch into your active branch.
+
+	* git remote add origin <server>:- Connect to a remote repository.
+
+	* git add <filename>:- Add files.
+
+	* git commit -m "Commit message":- Commit.
+
+	* git log :- CommitId is the leading characters of the changeset ID, up to 10, but must be unique.

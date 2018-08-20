@@ -1,0 +1,31 @@
+VIRTUALIZATION-
+
+	It refers to the act of creating a virtual (rather than actual) version of something, including virtual computer hardware platforms, 		storage devices, and computer network resources. 	
+ 
+USES-
+
+	It is used for running multiple OS in a single system.It is achieved by using a Hypervisor.
+	There are many other types of virtualization such as Network, Hardware and Storage virtualizaiton etc.
+
+TYPES OF HYPERVISOR-
+ 
+	Type 1 Hypervisor-         OS1  OS2  OS3
+                                         |
+                                     Hyperviser
+                                         |
+                                       DEVICE
+	*Very Fast
+        *Complicated
+	*If a single virtual machine crash, it does not affect the rest of the guest OS.
+
+
+	Type 2 Hypervisor-         OS1  OS2  OS3
+                                         |
+                                     Hyperviser
+                                         |
+                                         OS
+                                         |
+                                       DEVICE
+	*Slow
+        *Easy to operate
+	*If single former OS crashes, it will affect other OS.

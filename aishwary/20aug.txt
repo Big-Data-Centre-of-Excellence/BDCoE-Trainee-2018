@@ -1,0 +1,48 @@
+Date-20-08-2018
+Topic-Linux
+
+Operating system is used as an interface between user and the hardware.
+
+Linux is an open source operating system which was created by Linus Torwalds 
+in the year1994.He gave the software to the world free of cost.Anyone can read
+as well as make improvements in the Linux according to their need.Linux can 
+work on both GUI(graphical user interface)as well as LUI(line user interface).
+
+Linux is the kernel of many operating systems working today such as Ubuntu,
+Redhat linux,kali,etc.
+
+Some commands which are used in Terminal and their work are:-
+* (cd ..) -To go to parent directory or previous directory
+* (cd)    -To go back from all directories
+* (ls)    -Shows all files in current directory
+* (ls -a) -Shows all files along with the hidden files in the current director
+* (ls -l) -Shows all files with details
+* (free)  -To check the free space
+* (apropos delete)
+          -To know about all the delete commands
+* (apropos remove)
+          -To know about all remove commands
+* (whoami)-To check the user name
+* (rm)    -Is a command used yo remove any file 
+* (cat)   -Command used for concatenation
+* (sudo chmod)
+          -To change mode
+* (tar -cvf filename)
+          -To tar any file
+* (tar -xvf filename)
+          -To untar any file
+* (cp from to)
+          -To copy a file from the address given at "from" to the addres given
+           "to"
+* (if config)
+          -Used to check IP-address
+* (ping websitname)
+          -Used to check the IP address of any website
+* (sudo -i)
+          -To go to root mode
+* (exit)  -To exit from root mode
+* (lookout websitename.com)
+          -To get the URL of any website
+* (nautilus)
+          -Command to open the file explorer
+* (pwd)   -Shows the path of current working directory          

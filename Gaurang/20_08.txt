@@ -1,0 +1,26 @@
+Learned about Linux:-
+Linux was built in 1994 by Linus Torvalds.
+Linux is a kernal on top of which Ubuntu Run.
+It supports .deb file execution.
+It is a Open Source Operating System.
+It has commands similar to UNIX but differs in the way that Unix is a Paid Software and Linux is free.
+Learned about some linux Commands:-
+1. cd .. -->goto one path back;
+2. cp <file name> <path> -->To copy <file> to <path>
+3. mv <file name> <path> -->To move <file> to <path>
+4. pwd -->To check present working Directory.
+5. ls -a -->To show all files inc. hidden files.
+6. ls -l -->To show all files with their details such as their permission granted or not
+            r=read-4
+            w=write-2
+            x=executable-1
+7. apropos <work> -->to check command of its work.
+8. whatis <command> -->To know function of command.
+9. cat <file> -->To show Output of File.
+10. sudo chmd -R 777 <file name> -->To change permisiions to 777(read+write+execute).
+11. ifconfig -->To know the status of ip and dns etc.
+12. nslookup fb.com -->to know ip of the website.
+13. sudo tar -xzf <filename> -->To untar the tar file.
+14. sudo tar -cvf <filename> -->To tar any file.
+15. alis alpha='cd/home/gaurang/Desktop'.
+16. nautilus -->to open files.

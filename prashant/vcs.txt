@@ -1,0 +1,48 @@
+virtualisation:anything which is not real but seems to be real.for eg in partion of disk we allot memory to each partion.
+In practice each memory don't have the space the space we allocate but they have storage as per requirement.
+need of virtualisation:storage problem,security
+advantage of virtualisation:multiple os can be installed,2:portable,3:secure,4:easy maintainance
+disadvantage:same environment is required.
+there are two type of vitualisation
+type 1:hyper viser software is in b/w hard disk and os.multiple os can be installed
+type 2:hv is above the os interface
+VCS:Vcs is the management that manage any change or modification in projects
+distributed vcs:local user have each file of central repository.if central repository is crashed records are present to local users.
+centrallised vcs:records can't be retrieved if central repo is lost as local user have not all file.
+github:just  as in social network we share photos documents similarly github is the platform in which developers share codes
+git:git is the tool of sharing.
+basic commands in git are:
+1 git add "filename",git add -A
+2 git status
+3 git commit
+4 git branch
+5 git push origin branchname
+6 git log
+7 git init
+8 git checkout
+
+Linux:linux is an open souce os founded by linus tarwald in 1994.
+It have both GUI as well as LUI
+some distribution of linux are
+1 Ubuntu
+2 linux mint
+3 red hat
+4 trustx
+5 kali
+
+some basic commands:
+mkdir:makes directory
+cd:current directory
+cp:copy file
+ls:save file
+df:storage
+free:free space
+mv:move file
+rm:delete file
+chmode:change mode
+pwd:present working directory
+tar
+ifconfig
+scp:to transfer from one system to another
+grep:to search file
+alias:copy the command

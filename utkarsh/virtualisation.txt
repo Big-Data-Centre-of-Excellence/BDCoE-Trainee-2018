@@ -1,0 +1,12 @@
+				Virtualisation
+			       ----------------
+It means that trying to virtulise our space i.e  trying to fool our pc and trying to fool the os that actually there is plenty of space while there is not, actually the same memory is being allocated to the different programs bt both the programs cannot use the same memory simultaneously.
+
+there are two types of virtual machines --
+					 |
+					 |
+      ------------------------------------------------------------------
+      |								       |
+vm installed over the kernel				   vm installed over the OS
+-used by various business organisations                    -used by students 
+

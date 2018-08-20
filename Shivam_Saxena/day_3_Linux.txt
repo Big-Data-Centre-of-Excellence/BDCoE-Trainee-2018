@@ -47,7 +47,7 @@ Linux Cheat sheet:
 			  v=verbose
 			  f=file name
 			  x=extract
-			  z=gzip file(gzip=guzip It is a free and open source algorithm for file compression)
+			  z=gzip file(gzip=gunzip It is a free and open source algorithm for file compression)
 		Creating a file: $tar cvf <target file.tar> <To be compressed files>
 		Extracting a file: $tar xvf <filename.tar>
 	->Changing name of specific command: $alias <new name>='command';

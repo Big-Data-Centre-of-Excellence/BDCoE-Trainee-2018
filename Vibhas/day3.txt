@@ -1,0 +1,124 @@
+* LINUX:-
+
+Linux is a family of free and open-source software operating systems built around the Linux kernel. 
+
+Some of the most popular and mainstream Linux distributor are Arch Linux, CentOS, Debian and Raspbian, Fedora, Gentoo Linux, Linux Mint, Mageia, openSUSE and Ubuntu, together with commercial distributions such as Red Hat Enterprise Linux and SUSE Linux Enterprise Server.
+
+Kernel:- It is heart or core of an operating system.
+
+Basic Architecture:  Hardware
+                         |
+                      Kernel
+                         |   
+                       Shell
+                         |
+                     Applications
+
+As an Operating System, some of Linux features are:-
+
+    Portable(Multiplatform)
+    Multitasking
+    Multi User
+    Virtual Memory
+    Hierarchical File System
+    Graphical User Interface 
+    Wide Hardware Support
+    Dynamically Linked Shared Libraries as well as Static Libraries
+    Multiple Networking Protocols (TCP/IP, IPX/SPX, Appletalk, AX.25)
+    Shell
+    Strong Security Model
+    Open Source
+
+Linux Commands:-
+
+ creating directories on a Linux operating system:
+ mkdir directoryname
+
+ removing a directory: 
+ rmdir directoryname
+
+ The move command can also be used for renaming directories
+ mv directoryname newdirectoryname
+
+ Creating an empty file: 
+ touch filename
+
+ Copying a file:  
+ cp [source] [destination]
+
+ Remove file: 
+ rm file_name 
+
+ Remove files from directory recurcively:   
+ rm -r <dir name>
+
+Handling tar file: 
+tar switches file_names
+Switches: c=create
+          v=verbose
+	  f=file name
+	  x=extract
+          z=gzip file 
+ 
+   gzip=gunzip ->It is a free and open source algorithm for file compression
+
+ Creating a file: 
+ tar cvf target_file.tar location
+
+ Extracting a file:  
+ tar xvf filename.tar
+
+ Listing files in a directory: ls
+ Listing files Recursively: ls -r
+ Listing files With details: ls -l
+ Listing all hidden files: ls -a
+
+ pwd- present working directory
+  
+ chmod values:- r=4
+                w=2
+                x=1
+
+ Pathnames:-
+  * Absolute- ex-> /var/ftp/pub
+  * Relative- ex-> pwd/var/logcd kernel
+
+ Refference:-
+ cd . ->current directory
+ cd .. ->parent directory
+
+ history:- review commands
+ df:- shows the amount of disk space used and available on Linux file systems.
+ free:- check free emory
+ htop:-to see all the processes running on the system, along with their full command lines.
+
+ to install a package:-
+ sudo apt-get install package_name
+
+ to show all commands related to word:-
+ apropos keywords
+
+ show command use:-
+ whats command
+
+ to show username of current user:-
+ whoami
+ 
+/ :- root
+cat newfile:- concatination
+
+changing name of specific command: alias new_name='command'; 
+~/ :- user
+ 
+protocol:-
+ #telnet:- no encryption for username and password
+ #ssh(secure shell):-username and password encrypted
+
+ctr+c :- to intrupt
+ifconfig:- assign IP address
+sudo kill :- terminate a process
+ 
+
+
+
+

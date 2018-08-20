@@ -1,0 +1,32 @@
+linux is not unix.
+In linux everything is case sensitive.
+some command are:
+pwd = present working dir.
+cd /=root dir.
+cd .. = move to previous dir.
+cp = copy the folder.
+rm= remove or delete the folder.
+mkdir=make dir.
+rmdir = remove or delete the dir.
+rmdir = only delete the dir if the dir is empty.
+rmdir -r = delete the dir along with its content ...where -r stand fot recursively delete all the folder.
+man= it give all the information about the particular command .
+untar=untar the tar file.
+ifconfig= give the config of the system.
+nano=make a new file.
+sl=animation command.
+sudo=superuser command.
+sudo apt-get install <name of the file>.
+ps aux | grep apt = the operation which are parallely running give status.
+sudo kill -9 15432=kill the particular process.
+ctrl c=close the process normally.
+ctrl z = close force fully.
+mv=movwe the folder.
+whatis= name of the command.
+whoami=tell the user name.
+
+
+THERE ARE SOME RWX;
+r=4,w=2,x=1;
+-rw is the sequence.
+

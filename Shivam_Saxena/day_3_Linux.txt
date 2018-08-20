@@ -1,0 +1,55 @@
+Day 3: Linux
+
+Linux: It is a kernal on which different operating systems like Ubuntu, Mint, Debian, etc, are based upon.
+
+Kernel: It can be though as the heart or the core of an operating system.
+
+Basic Architecture: [Hardware]-->[Kernel]-->[Shell]-->[Applications]
+
+Features of Linux: *Portable
+		   *Open source
+		   *Free
+		   *Multi user
+		   *Multiprogramming
+		   *Shell
+		   *Hierarchial file system
+		   *Security
+
+Linux Cheat sheet:
+	->Getting root permissions: $sudo <command>
+				    $sudo -i
+	->Installing packages: $apt -get install <Package name>
+			       $apt install <Package name>
+	->Pathnames:
+		*Absolute: $cd <path>
+		*Reference: $cd .
+			    $cd ..
+			    $cd
+	->Present working directory: $pwd
+	->Listing files in a directory: $ls
+			   Recursively: $ls -r
+			  With details: $ls -l
+	->File handling:
+		*Creating a new directory: $mkdir <dir name>
+		*Creating an empty file: $touch <filename>
+		*Copying a file: $cp <source> <destination>
+		*Moving/Renaming a file $mv <source> <destination>
+		*Remove file: $rm <file name>
+			      $rm -r <dir name>
+		*Removing a directory: rmdir <dir name>
+		*Changing permissions of a file: $sudo chmod -R <code> <filename>
+			d=directory
+			r=read(4)
+			w=write(2)
+			execute(1)
+	->Handling tar file: $tar -switches <file names>
+		Switches: c=create
+			  v=verbose
+			  f=file name
+			  x=extract
+			  z=gzip file(gzip=guzip It is a free and open source algorithm for file compression)
+		Creating a file: $tar cvf <target file.tar> <To be compressed files>
+		Extracting a file: $tar xvf <filename.tar>
+	->Changing name of specific command: $alias <new name>='command';
+	->Root='/'
+	  user='~/'

@@ -1,0 +1,8 @@
+--> linux is a kernal
+--> double mouse click copy
+--> cmatrix, sl "sudo apt-get install sl/cmatrix"
+--> ip address of any site "nslookup fb.com"
+--> installation of applications in linux (.deb,.tar.jar,link copy method)
+--> different mode of file rwx(4,2,1)
+--> sudo -i : shift to root user
+--> 3 type user super:associative:noramal

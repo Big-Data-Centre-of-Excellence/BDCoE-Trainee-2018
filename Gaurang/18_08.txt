@@ -1,0 +1,14 @@
+Learned about VCS(Version Controlled System)
+Learned About Git.Git is a Distributed VCS which manages the Different Versions of The File.
+Git is Used when Working in a team.
+Git Creates branches for every teammate and finally team leader can merge the branches.
+First we Updated our system(sudo apt-get update)
+then installed Git (sudo apt install git)
+Initiallise git.(git init)
+used some global first time usage commands.
+
+Created a file.(nano first.c)
+Added the file for git to be traced.(git add first.c)
+commit the file for local servers(git commit -m “message”)
+then create repo in remote servers(here GitHub)(git remote add origin <repo address>)
+push the git to the servers(git push -u origin <branch name>)

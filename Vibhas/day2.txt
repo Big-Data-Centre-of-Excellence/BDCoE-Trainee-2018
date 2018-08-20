@@ -1,0 +1,55 @@
+                          * VCS *
+
+Full form:-Version Control System
+
+Definition:-Version control systems are a category of software tools that help a software team manage changes to source code over time. Version control software keeps track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
+
+Types:-
+
+1. Dstributed:- Centralized VCSs keep the history of changes on a central server from which    everyone requests the latest version of the work and pushes the latest changes to.
+             ex- GIT
+
+2. Centralised:- Distributed VCS, everyone has a local copy of the entire work’s history. This means that it is not necessary to be online to change revisions or add changes to the work. 
+             ex- SVM
+
+Features of GIT:-
+
+1.Compatible
+2.Speed (written in C which is not so much high leveled language like python)
+3.Open Source
+4.Non linear
+
+Stages of file in GIT:-
+
+1.Working files(red file,untracked)
+2.Staging area(green file,tracked)
+3.Local repo
+4.Remote
+
+Types of File:-
+1.Tracked
+2.Untracked
+3.Modified 
+4.Unmodified
+
+GIT commands:-
+
+git config --global user.name "Sam Smith"     :-Configure the author name and email address to be 
+git config --global user.email sam@example.com   used with your commits.
+
+git init:- Create a new local repository
+
+git clone username@host:/path/to/repository:- to get copy of work from server.
+
+git push origin <branchname>:- Push the branch to your remote repository, so others can use it.
+
+git checkout -b <branchname>:- Create a new branch and switch to it.
+
+git remote add origin <server>:- Connect to a remote repository.
+
+git add <filename>:- Add files.
+
+git commit -m "Commit message":- Commit.
+
+
+

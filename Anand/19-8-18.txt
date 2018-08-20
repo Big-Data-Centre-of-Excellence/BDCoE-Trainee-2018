@@ -1,0 +1,16 @@
+Learn in College.
+Today  I learn something new call prolog. I created a simple prolog program and excuted it.
+Command used : swipl.
+then create a file with new.pl
+then type following instructions.
+
+par(ram,anand). // Creating a function name par.
+par(anand,shyam).
+
+save and exit. Then open the first terminal and compile using [] ex.[filename].
+if the statement come true after that then your program is correct.
+Then execute the program as follows.
+
+par(ram,X). 
+
+Peace. Thanks for reading.

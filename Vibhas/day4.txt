@@ -1,0 +1,46 @@
+*BIGDATA:- Big data is a term that describes the large volume of data – both structured and unstructured 
+
+*4 V's definition of Bigdata:-
+                            1. Volume
+                            2. Variety
+                            3. Velocity
+                            4. Veracity(accurate data)
+5th V's may be Value.
+
+types of data :- 
+                1. Structured data, ex- RDMS, R/C
+                2. Semi-structured data, ex- XML
+                3. Unstructured data, ex-log files
+
+*GFS (Google File System) :-
+Google File System (GFS or GoogleFS) is a proprietary distributed file system developed by Google to provide efficient, reliable access to data using large clusters of commodity hardware. 
+
+* Map Address:- MapReduce is a programming model and an associated implementation for processing and generating big data sets with a parallel, distributed algorithm on a cluster.
+
+* Apache HADOOP:- Apache Hadoop is a collection of open-source software utilities that facilitate using a network of many computers to solve problems involving massive amounts of data and computation. It provides a software framework for distributed storage and processing of big data using the MapReduce programming model.
+
+*Apache STORM:- Apache Storm is a free and open source distributed realtime computation system. Storm makes it easy to reliably process unbounded streams of data, doing for realtime processing what Hadoop did for batch processing.
+ Characterstics:- 
+                1. Fault tolerance
+                2. Parallel computing
+                3. Lazy evaluation
+
+*Apache SPARK:- Apache Spark is an open-source cluster-computing framework. Spark provides an interface for programming entire clusters with implicit data parallelism and fault tolerance.
+
+*Apache PIG:- Apache Pig is an open-source technology that offers a high-level mechanism for the parallel programming of MapReduce jobs to be executed on Hadoop clusters. 
+uses DAG(Direct Acyclic Graph)
+
+*Apache HIVE:-Apache Hive is an open source data warehouse system for querying and analyzing large data sets that are principally stored in Hadoop files.
+
+Advantages of HIVE over RDMS:-
+1.In RDBMS, maximum data size allowed will be in 10’s of Terabytes but whereas Hive can 100’s Petabytes very easily. 
+2.RDBMS is best suited for dynamic data analysis and where fast responses are expected but Hive is suited for data warehouse applications, where relatively static data is analyzed, fast response times are not required, and when the data is not changing rapidly. 
+3.Hive is very easily scalable at low cost but RDBMS is not that much scalable that too it is very costly scale up.
+
+for real time streaming:- 
+                        *Apache Kafka 
+                        *Apache Flume
+
+
+
+

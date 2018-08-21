@@ -1,0 +1,41 @@
+Linux is kernel which links hardware and operating system.
+Ubuntu is one of many distributions of operating sysytem which work on linux kernerl
+
+Linux Commands-
+  1.Change Directory
+     cd        (-go to home directory)
+     cd ..      (go to parent directory)
+
+  2.System Information
+     uname -a        (For Linux system information)
+     uname -r         (For kernel release information)
+      date             (Show date and time)
+      cal             (show calender)
+       w              (display who is online)
+       whoami         (display user)
+  3. List command
+      ls            (show files in current directory)
+      ls -a         (show all files including hidden files)
+      ls -l         (show permissions given)
+       permission are of format 
+        d  rwx  rwx   rwx
+        d is indicating that it is a directory
+        the three blocks are permission assigned to super user, associate user, normal userge     
+        respectively.
+         r- >read->4
+         w->write->2
+         x->execute->1
+  4. change permission
+      sudo chmod -R777 filename           
+      777 permissions to three users 7=4+2+1
+  5.alias alpha='command'             (supplies an alternate name to a command or sequence of commands)
+   6.apropos operation           (to know command to perform operation)
+    7. whatis  command               (to know about commaand)
+    8. copy
+       cp filename location
+    9. move or rename
+       mv filename location
+   10.delete
+       rm -r filename                (remove recursively)
+       rm
+   11.apt (advanced pacakage tool)

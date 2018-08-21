@@ -1,0 +1,65 @@
+LINUX-
+
+	It was developed by Linus Torvalds in 1991.
+	Linux is a family of free and open-source software operating systems built around the Linux kernel.
+	The kernel is a computer program that is the core of a computer's operating system, with complete control over everything in the system.
+
+FEATURES-   
+               *Portable
+               *Open source
+	       *Free
+	       *Multi user
+	       *Multiprogramming
+               *Shell
+               *Hierarchial file system
+               *Security
+
+BASIC COMMANDS-
+
+	* pwd -To know which directory you are currently in.
+	* ls - To know what files are in your directory.
+		*Recursively: $ ls -r
+		*With details: $ ls -l
+	* cd - To go to a directory.
+		*Absolute: $ cd <path>
+		*Reference: $ cd .
+			    $ cd ..
+                            $ cd 
+	* mkdir -To create a folder or a directory.
+	* rmdir -To delete a directory.
+	* rm - To delete files. 
+ 		*rm -r  To delete a directory.
+	* touch -To create a file.
+	* cp - To copy files through the command line. 
+		$ cp <source> <destination>
+	* mv - To move files through the command line.Also used for renaming. 
+		$ mv <source> <destination>
+	* sudo -sudo stands for "SuperUser Do". So, if you want any command to be done with administrative or root privileges, you can use the sudo 			command. 
+	* apt-get -Use apt to work with packages in the Linux command line. Use apt-get to install packages. 
+	* chmod -Changes the access permissions.
+		The access type is controlled by the following options:
+                  r -Read
+                  w -Write 
+		  x- Executable  
+	*tar - The tar puts one file or (usually) several files into an archive. Compression is optional.tar is a quite complex command with a number 			of options available. The most frequently used options are:
+	-f    Writes the output to a file and not to the screen as is usually the case.
+
+	-c    Creates a new tar archive.
+
+	-r    Adds files to an existing archive.
+
+	-t    Outputs the contents of an archive.
+
+	-u    Adds files, but only if they are newer than the files already contained in the archive.
+
+	-x    Unpacks files from an archive (extraction).
+
+	-z    Packs the resulting archive with gzip.
+
+	-j    Compresses the resulting archive with bzip2.
+
+	-v    Lists files processed.
+	
+	* alias -To change name of specific commands which can be used further.
+
+

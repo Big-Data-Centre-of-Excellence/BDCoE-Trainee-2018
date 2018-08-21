@@ -1,0 +1,40 @@
+Hadoop is a architecture of master and slave.
+it is a open source framework where data is stored and processed.
+
+
+Hadoop 1 components:
+DFS:Distributed file system. The file is distributed to the slave computers.
+1:HDFS=Hadoop distributed file system.
+The function of HDFS is to stored the data which is transfered by the user.
+
+2:MAP reduce:Its is the java coded programmes which are used to processed the data.
+
+
+Hadoop 2 components:
+1:HDFS.
+2:YARN/MRv2:Resource management function is done here.
+
+Ecosystem of Hadoop 1:
+A):Oozie:it is used as a work flow sedular .
+B):pig,hive,mahout : They are the tools of the hadoop which are on the hadoop and used to processed the data.
+C):MAP Reduce
+D):Hdfs
+E):Flume:It is used to import the unstructered and streaming data to the HDFS.
+F):Sqoop:It is  used to import the structered data to the HDFS.
+
+
+Hadoop 2 ecosystem:
+A):Oozie
+B):pig ,hive ,Mahout:
+C):YARN:data processing tool 
+D):MAP Reduce
+E):YARN Resource Management:it is used to managed the resource.
+F):HDFS
+E):Flume
+F):Sqoop
+
+
+File Block:When we transfered the file in the hadoop it get divided into blocks 128mb blocks or we can change the config.
+Replication: When we stored the file in hadoop each file get copied 3 times and stored in  different slaves. So if one slave is crashed the data is save
+
+

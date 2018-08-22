@@ -1,0 +1,22 @@
+HADOOP
+
+
+
+Hadoop is an open source software which uses the interconnection of many computers to solve problems like handling big data and other computational problems.
+Hadoop is written in C language.
+It is a cross platform language.
+Initial release:2011
+
+Apache hadoop consists mainly of two parts:
+First is the storage part called HDFS(Hadoop Distributed File System).
+Second is the processing part called Map Reduce.
+
+Hadoop divides the data into several data and distribute it into different nodes. Then it assigns separate code to each data so that the whole data can be processed fastly and easily.
+
+
+
+
+INSTALLATION
+
+Hadoop is installed in our system using the files Single Node 12.9.16.odt and hadoop 2.7.7.tar
+

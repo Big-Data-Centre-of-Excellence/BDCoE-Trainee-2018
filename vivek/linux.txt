@@ -1,0 +1,13 @@
+cd - change directory
+rm - remove directory
+mkdir - make directory
+sudo -i - root access
+sudo apt-get install <name> - to install important files/softwares from linux
+                              library
+/ - root directory
+~ - home directry
+cd .. - back to parent directory
+cd - to the main directory
+cp <source> <destination> - copy command
+ifconfig - ip congfiguration
+

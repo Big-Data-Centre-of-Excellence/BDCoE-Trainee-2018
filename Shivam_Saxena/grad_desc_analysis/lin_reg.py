@@ -22,8 +22,6 @@ def scaler(X):
     factor=max(X)-minimum
     for i in X:
         i[0]=(i[0]-minimum)/factor
-    minimum=min(y)
-    factor=max(y)-minimum
     del(minimum,factor,i)
     return X
 

@@ -1,0 +1,17 @@
+Big Data :-Big data is a term that is used to describe data that is high volume, high velocity, and/or high variety; requires new technologies and techniques to capture, store, and analyze it and is used to enhance decision making, provide insight and discovery, and support and optimize processes.
+
+Big Data is a phrase used to mean a massive volume of both structured and unstructured data that is so large it is difficult to process using traditional database and software techniques. In most enterprise scenarios the volume of data is too big or it moves too fast or it exceeds current processing capacity.
+
+Technoligies under Big Data :-
+1. HDFS (Hadoop Distributed File System) :- The Hadoop Distributed File System (HDFS) is the primary data storage system used by Hadoop applications. It employs a NameNode and DataNode architecture to implement a distributed file system that provides high-performance access to data across highly scalable Hadoop clusters
+
+2. YARN (Yet ANother Resourse Negotior):- YARN advantages. Using Apache Hadoop YARN to separate HDFS from MapReduce made the Hadoop environment more suitable for real-time processing uses and other applications that can't wait for batch jobs to finish. Now, MapReduce is just one of many processing engines that can run Hadoop applications.
+
+3. Apache Spark :-Apache Spark is a general framework for distributed computing that offers high performance for both batch and interactive processing
+
+4. Apache Pig :- Apache Pig is a platform for analyzing large data sets that consists of a high-level language for expressing data analysis programs, coupled with infrastructure for evaluating these programs. The salient property of Pig programs is that their structure is amenable to substantial parallelization, which in turns enables them to handle very large data sets.
+
+5. Hive:- The Apache Hive ™ data warehouse software facilitates reading, writing, and managing large datasets residing in distributed storage using SQL. Structure can be projected onto data already in storage. A command line tool and JDBC driver are provided to connect users to Hive.
+
+6. Apache Kafka :- Kafka is often used in real-time streaming data architectures to provide real-time analytics. Learn its specific use cases and why it's exploding in popularity. ... Kafka is used for real-time streams of data, to collect big data, or to do real time analysis (or both).
+7. Apache Flume :-Apache Flume is a distributed, reliable, and available service for efficiently collecting, aggregating, and moving large amounts of streaming data into the Hadoop Distributed File System (HDFS). ... YARN coordinates data ingest from Apache Flume and other services that deliver raw data into an Enterprise Hadoop cluster.

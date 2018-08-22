@@ -1,0 +1,45 @@
+Day 4 and 5: Overview of Big Data and Installation of Hadoop
+
+To store and process large amount of data efficiently and to extract valuable information from the data, we use Big Data technology.
+
+Types of Data:
+	*Structured: e.g RDMS
+	*Semi-Structured:e.g XML, JSON
+	*Unstructured: Log files
+
+4 V's of Big Data:
+	*Volume: Process high volumes of low-density, unstructured data. This can be data of unknown value, such as Twitter data feeds, clickstreams on a webpage or a mobile app,etc,.
+	*Velocity: Velocity is the fast rate at which data is received and processed.
+	*Variety:Types of data that are available e.g. Text, video,audio,etc,.
+	*Veracity: The accuracy of the data.
+The 5th V is Value: Refers to the meaningful data from that huge chunk of data.
+
+GFS: Google File System
+MR: Map Reduce
+
+GFS+MR=Hadoop
+HDFS: Hadoop distributed file system
+Hadoop: Batch Processing
+
+Apache Spark: *Nearly realtime processing(Microbatches)
+	      *Fault tolerance
+	      *Parallel computing
+	      *Lazy evaluation
+
+Apache Storm: Realtime processing
+
+Apache Pig(Tool): Works on piglatin language, similar to sql. Execute MapReduce programs of Hadoop
+
+Apache Hive: Data Warehouse
+		Advantages over RDMS:
+			*More Storage(Upto 10PTB)
+			*Can easily be scaled up
+			*Dynamic schema
+
+Apache Kafka: Realtime streaming
+
+Pipeline: [Data from an API]--(Kafka)-->[HDFS]-->[Hive]
+
+
+
+

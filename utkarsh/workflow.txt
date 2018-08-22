@@ -1,0 +1,14 @@
+
+1- virtualisation
+2- Git
+3- Linux
+4- BIG DATA --
+	SOFTWARES---
+		hadoop
+		spark
+		kafka
+		pig
+		hive
+		mongo db with elastic search
+5-Machine Learning
+

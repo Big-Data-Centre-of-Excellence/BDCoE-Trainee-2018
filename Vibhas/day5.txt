@@ -1,0 +1,69 @@
+* Hadoop:- Open source cluster computing framework.
+
+Framework:- Collection of libraries that bounds to do distributed computing in any language.
+ex:-
+  Language        Framework
+1.Java            hybernate, android , spring ,Hadoop
+2.PHP             cakePHP, Symfony
+
+Cluster:- Collection of Computers
+
+Types of data scaling:-
+1)Vertical Scaling :- Increasing configuration of one sysyem.
+2)Horizontal Scaling:- Increasing no. of systems.
+
+Major parts of Hadoop:-
+1)Storing:- HDFS(Hadoop distributed file stiorage):- A file System like NTFS in Windows to create, delete ,store files.
+ 
+blocks:-Small equall divisions of any data(4 KB for Windows and LINUx & 64 MB for Hadoop 1.0 & 128 MB for Hadoop 2.0
+
+Swaping:- Moving data from main memory to RAM.
+Thrashing:- lagging of systems due to multiple tabs.
+
+2)Processing:- Map-Reducing:- Mappping:- Breaking tasks into smaller tasks.
+                              Reducing:- Assembling smaller tasks to bigger tasks.
+                         
+* Hadoop 1.0:-
+ 
+Architecture:- Master-Slave Architecture
+Master :- Only one System with better Configuration.
+Slave Systems:-Comodity Hardwares.
+ 
+Daemons:- Process in background(java bots or program)
+
+Types:- HDFC    |1. Name Node
+        Daemons |2. data node
+                |3. Secondary Name Node
+     
+        Map-Reduce  |4. Job Tracker 
+        daemons     |5. Task Tracker
+ 
+In Master System:- Name Node, Job Tracker
+In Slave Systems:- Data Node ,Task Tracker
+
+1) Name Node:- Meta data(data about data)
+2)Data Node:- Actuall data stored.
+3)Secondary Name Node:- 2 components:-
+  a)FS Image:- Snapshot image showing all block address.
+  b)Edit logs:-Changes are stored here.
+ 
+Buffer time:- 1 hr after which changes in edit log merged with FS Image.
+Heart-beat:-After each 3 sec signal is sent to check any failure.Data Node sends Heart-beat to Name Node.
+Blacklist:-When no response comes to 4 requests than that slave node is blacklisted.
+
+Replication factor(By default 3)
+
+4)Job Tracker:- Master Daemon of Map-Reduce
+    JOBS:- a)Job Scheduling
+           b)Job Monitoring
+           c)Resource Allocation
+5)Task Tracker:- Processes Map-Reducing.
+
+*Failures:- a)SPOF(single point of failure)when J.T. fails.
+            b)Secondary Name Memory does'nt automatically takeover when main memory fails, its done manually by administrator.
+
+*Weak Points:- a)Name Node Capacity:- atmost 4000 nodes
+               b)As only one J.T. there so only 40,000 tasks at a time.
+               c)Secondary Name Node is not a backup automatically.
+               d)Static configuration of slots.
+               -------x-----------x--------x-----------x---------

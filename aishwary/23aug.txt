@@ -1,0 +1,23 @@
+Date -23-August-2018
+Topic-Basics about Hadoop and related things
+
+Hadoop is an open source distributed processing framework that manages data processing and storage for big data applications running in clustered 
+systems.In Big Data a huge amount of computation is to be done every minute which would take days if done using a single processing unit.To overcome
+this problem Hadoop divides the data which is to be processed in small parts in different slave systems called clusters and each part is processed on
+a different node and hence the process speeds up.
+
+Open source means that the source code of hadoop is open for access for any user and he or she can even make changes in that source code for
+themselves.
+
+A Framework is somewhat like a library but it has some restrictions in how a program should be written in it.As in case of Hadoop since the program
+is to be processed in different nodes so it should be written in a distributed manner such that it can be divided into clusters.
+
+Memory in any system is not continuous but divided in small fragments called block.Size of each such block is 4kb in windows as well as linux.
+
+Any program which is to be processed is firstly fetched from the secondary storage to the RAM because it is to be accessed fast while processing 
+which can only be done using RAM.And the whole program is to be fetched.However if the program can be divided into several parts then this process 
+can be done part wise.
+
+The process of fetching data from secondary memory to RAM and from RAM to secondary memory is termed as 'Swapping'.
+
+   

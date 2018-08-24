@@ -1,0 +1,26 @@
+HISTROY OF Virtualization:
+Although virtualization has become very popular recently but it is not a very new concept. It owes its origin decades back in mid 1960's. This happened when the huge and expensive computers of the day reached to a high processing speed but were unable to compensate the expensive computing time and the delay in the execution of the data.  This was due to the management process that was needed to be done by the operator manually.To get the best out of expensive computer processing, it was necessary to run multiple processes in parallel. This cultivated the cincept of time sharing and hence the idea of virtualization.
+ These hardware contains features which allow to exploit hypervisors that are used with the improved technique of virtualization (full virtualization) that make it easier to implement and enhance the performance.
+
+
+TIME SHARING:
+Thid basically means sharing time that is, Multiple programs are executed simultaneously, and the CPU meets each program for a little while, one by one in sequence. The time given to each job is small enough so that users can interact with each program to recognize that there are no other programs running.
+
+In 1972 the theoretical basis of the virtual computer systems was given at harward university. In the same year IBM introduced a mainframe that was able to simultaneously run different operating systems under the supervision of a control program – hypervisor.
+
+The first commercial computer system entirely designed for virtualization was given by IBM with the name IBM system 370. It allowed ther running of multiple instances simultaneously. Then a series of virtualized system was given by IBM. Several modern approaches to virtualization implementations are very unique for mainframe of computers from IBM.
+
+Due to the costs of these systems the prople found a new way out. The companies brought out x86 computers. They had a low end process(meaning-several small machines doing the work of a large dedicated server). So instead of having a high cost mainframe they opted to buy small systems as per the need arises.
+
+The impact of this new strategy was to ensure  a good deal of backlash against hardware scaling problems, and most of these servers were used for a single application.But the systems were under utilised because the appilcations were small for them thus there was a waste of memories in the systems. Thuis was another prolems suffered by the companies.
+
+Then in 1999, VMware Inc. introduced the concept of virtualization on the x86 platform as a more efficient way to operate the equipment of the platform, taking advantage of x86 servers to provide a computational structure that would enable the full utilization of computational resources.
+
+ 2005 onwars Intel and AMD have been working in the field to improve the virualization technology.These are the processor manufacturers.These hardware contains features which allow to exploit hypervisors that are used with the improved technique of virtualization (full virtualization) that make it easier to implement and enhance the performance.
+
+
+
+
+
+
+

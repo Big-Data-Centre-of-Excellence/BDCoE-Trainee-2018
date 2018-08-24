@@ -1,0 +1,15 @@
+                                                                           BIG DATA
+Big data is the collection of data sets that are so big and complex that traditional data-processing application software are inadequate to deal with them.
+There are a number of concepts with big data like the 5V's i.e. volume , variety, velocity, value ,veracity
+a.VOLUME-there is a large volume of data.
+b.VARIETY-data is generated from different sources.
+c.VELOCITY-data is generated at an alarming rate.
+d.VALUE-mechanism to bring out correct meaning of data.
+e.VERACITY-this is the uncertainity and inconsistency in data.
+Types of data:-
+a.Structured-here the data is in a tabular format
+b.Unstructured -they have no clear format of storage(log files,audio,video and images)
+c.semi- structured-jason,XML,CSV
+Hadoop is the framework that allows us to store big data in a distributed environment. It follows master/slave architecture.It is also the open source cluster computing .
+1.HDFS(hadoop distibuted file system)-it allows us to store data of various formats across a cluster.
+2.MR(map reduce)-this allows parallel processing of data in hadoop.

@@ -1,0 +1,14 @@
+Big data:::
+We are generating a lot of data in various form.
+Data which is difficult to process comes under Big Data. It has 5 V’s
+--> velocity
+--> variety
+--> value
+--> volume
+--> veracity
+There are many problems related to big data -->
+1) storing such a big data.
+2) storing variety of data. i.e structured, semi-structured,unstructured.
+3) processing such a large Big data.
+
+Hadoop is a way of solving all such problems, which works on distributed file system.

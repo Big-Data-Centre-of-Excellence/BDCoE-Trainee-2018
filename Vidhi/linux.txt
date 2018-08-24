@@ -1,0 +1,76 @@
+LINUX:
+Linux is an operating system that works just like Windows and Mac OS X. As an operating system.It is a hands on operating system,which uses a lot of commands and is a mixture od command line interface and graphical user interface.
+ 
+HISTORY OF LINUX:
+Linux, like Mac OS X, is based on the Unix operating system. A research team at AT&T’s Bell Labs developed Unix in the late 1960s and early 1970s with a focus on creating an operating system that would be accessible and secure for multiple users.
+
+Corporations started licensing Unix in the 1980s and 1990s. By the late 1980s, there was interest in building a free operating system that would be similar to Unix, but that could be tinkered with and redistributed. In 1991, Linus Torvalds released the Linux kernel as free, open-source software. Open source means that the code is fully visible, and can be modified and redistributed.
+
+Strictly speaking, Linux is the kernel, not the entire operating system.  It is like an interface but not a complete operating system.The major part of the operarting system forms the kernal and the rest of the operating system usually includes many GNU libraries, utilities, and other software, from the Free Software Foundation. The operating system as a whole is known as GNU/Linux.
+
+Exploring linux directories:
+1. cd var
+is the command to move to your var directory
+2. ls command views the contents of the var directory
+3. cd.. to go to the root directory
+4. pwd tells the current working directory
+
+One needs a lot of permissions to work in linux there are many commands which cannot run if they are not having the permission of the super user or sudo.
+Three categories access the file system in  linux:
+1.Users: it refers to a person or an application that can access the files on you system. There can be any number of users in the system and any number of people can acccess there files on the system.
+2.Groups: A collection of one or more users. Groups are a useful way to grant similar access privileges to multiple users, without having to set them individually for each user. When a user account is created, it is assigned a default group with the same name as the user name. Each user can belong to any number of groups
+3.Everyone:it is the category for everyone else. If someone tries to access the system without being logged in as a specific user then they fall into this category.
+
+The next important concept is permissions. Every file and directory on your Linux system has three possible access levels:
+1. READ: Files with read permissions can be viewed
+2. WRITE: Files with write permissions can be edited.
+3. EXEXUTE: Files with execute permissions can be run, like an application. When you start a program or script, you execute it.
+To view permissions in git:
+drwxr-xr-x  13 user1 group1 4.0K Nov  6 16:04 my_directory
+The user and group are listed in the middle. In this case, the user is user1 and the group is group1. The user is listed first and the group second. The permissions are listed at the beginning of the line. Ignoring the first character, you can see that the permissions for the my_directory directory are rwxr-xr-x.
+    • r: read
+    • w: write
+    • x: execute
+    • -: no permission
+Installing Software
+Like most things in Linux, installing software is accomplished by typing and executing a specific text command. The most popular Linux distributions come with package managers that make it relatively easy to install and uninstall software . Debian and Ubuntu use the Advanced Packaging Tool (APT) package manager, and Fedora and CentOS use the Yellowdog Updater, Modified (yum) package manager.
+Install with apt
+sudo get apt install “software name” 
+it is the command to install any software in linux. Here sudo is the super user whose permission is sought from this command. 
+
+Install with YUM
+Using yum on Fedora and CentOS systems is just as easy:
+yum install software
+RUNNING PROGRAMS:
+Always on:
+You want some programs, like your web server, to run constantly. These are the programs that run as services on your Linode. For example, your web server keeps your website visible, so you want it to stay on all the time. Server processes that stay running in the background are known as daemons. To start a daemon, run the following command, replacing software with the name of the software you want to run. The name will be the same one you used to install it (for example, apache2 for Apache):
+systemctl start software
+ONCE:
+Sometimes you want to run a program on an as-needed basis. For example:
+    1. Use the cd command to move into the directory where the script is located.
+    2. Run ls -l directory to check that your user account has execute permissions for the script file in the directory. If you need to modify the permissions, see the Linux Users and Groups guide.
+    3. Run the script with the following syntax:
+       ./my_script
+Scheduled:
+Sometimes you want to run a program at regular intervals, as in the case of a daily backup script. The best way to do this is with the cron tool. Read the Schedule Tasks with Cron article to learn more. Scripts that you run this way also have to be executable.
+UPDATNG SOFTWARE
+apt-get update
+Tthis is ther command for geting updates for any software
+yum update
+this is another command using yum to get the update
+UNINSTALLING SOFTWARE
+If you need to uninstall software, use the apt-get remove command:
+apt-get remove software
+to remove all the configuration files associated use the command
+apt-get purge software
+SECURITY:
+When you run a Linux system, you are in charge of its security. The Internet is full of people who want to use your Linode’s computing power for their own goals. If you neglect to change default passwords, install out-of-date software, or leave other security holes available for hackers to exploit, it won’t take long for your system to get hacked.
+*alias- is the false name given to a command. 
+eg. alias alpha =cd/home/bdcoe/documents/
+*.tar- is a download zipped file which is needed to be unzipped.
+*All the commands that are used in unix are also incorporated in linux. Linux has many distributions.
+OPEN SOURCE:
+Linux is an open source operating system. Which means that the source code of linux is available for all to see and make changes according to themselves.  A person can make an operating system for themselves by downloading the linux kernel and then manipulating the source code according to themselves.
+*linux is a case sensitive operating system.
+* windows is an expensive operating system but linux is free and hence easily can be afforded.
+This is the introduction to linux as an operating system robust but usfull that has brought a new era in the industries.

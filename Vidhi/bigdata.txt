@@ -1,0 +1,57 @@
+BIG DATA:
+What is big data?
+The term Big Data refers to all the data that is being generated across the globe at an unprecedented rate. This data could be either structured or unstructured. Data is the driving force for all the growing firms in the world today.In the world today every second millons of tb(or even more) data is generated in the virtual world.It is completely impossible to keep a track of this much amount of data by using the traditional methods. So a new need was felt to manage this data. Thus a new concept evolved, which came under the wide term i.e., big data.
+
+The range of the data universe is about 10 to the power 44. Which is  not even imaginable .
+
+Big Data has certain characteristics and hence is defined using 4Vs namely:
+
+Volume: the amount of data that businesses can collect is really enormous and hence the volume of the data becomes a critical factor in Big Data analytics. The volume ot this data is increasing day by day and it is becoming more and more difficult to tackle this data. This growing data of all kinds is the  biggest concern of the day.
+Velocity: the rate at which new data is being generated all thanks to our dependence on the internet that is the biggest resource to contribute to this increasing data. The speed at which data is popped or pushed into the internet is icreasing very rapidly.The transfer of machine-to-machine data is also important to parse Big Data in a timely manner.
+Variety:the data that is generated is completely heterogeneous in the sense that it could be in various formats like video, text, database, numeric, sensor dataand so on and hence understanding the type of Big Data is a key factor to unlocking its value. Data can be or three types:
+1. Structured- Eg RDMS
+2. Unstructured- eg-log files
+3. Semistructured-XML
+Veracity: knowing whether the data that is available is coming from a credible source is of utmost importance . That comes under the head of veracity.
+The term big data was coined by John Mescy.
+Once the Big Data is converted into packets of information then it becomes really straightforward for most business enterprises in the sense that they now know what their customers want, what are the products that are fast moving, what are the expectations of the users from the customer service, how to speed up the time to market, ways to reduce costs, and methods to build economies of scale in a highly efficient manner. Thus Big Data distinctively leads to big time benefits for organizations and hence naturally there is such a huge amount of interest in it from all around the world.
+Structured 
+Any data that can be stored, accessed and processed in the form of fixed format is termed as a 'structured' data. Over the period of time, talent in computer science have achieved greater success in developing techniques for working with such kind of data (where the format is well known in advance) and also deriving value out of it. However, now days, we are foreseeing issues when size of such data grows to a huge extent, typical sizes are being in the rage of multiple zettabyte. 
+Unstructured 
+Any data with unknown form or the structure is classified as unstructured data. In addition to the size being huge, un-structured data poses multiple challenges in terms of its processing for deriving value out of it. Typical example of unstructured data is, a heterogeneous data source containing a combination of simple text files, images, videos etc. Now a day organizations have wealth of data available with them but unfortunately they don't know how to derive value out of it since this data is in its raw form or unstructured format. 
+Semi-structured 
+Semi-structured data can contain both the forms of data. We can see semi-structured data as a strcutured in form but it is actually not defined with e.g. a table definition in relational DBMS. Example of semi-structured data is a data represented in XML file. 
+Examples Of Semi-structured 
+....Benefits of Big Data Processing
+Ability to process 'Big Data' brings in multiple benefits, such as- 
+• Businesses can utilize outside intelligence while taking decisions 
+Access to social data from search engines and sites like facebook, twitter are enabling organizations to improve their business strategies. 
+• Improved customer service 
+Traditional customer feedback systems are getting replaced by new systems designed with 'Big Data' technologies. In these new systems, Big Data and natural language processing technologies are being used to read and evaluate consumer responses. 
+• Early identification of risk to the product/services, if any 
+• Better operational efficiency 
+'Big Data' technologies can be used for creating staging area for new data before identifying what data should be moved to the data warehouse.
+Clustered Computing
+Because of the qualities of big data, individual computers are often inadequate for handling the data at most stages.
+Big data clustering software combines the resources of many smaller machines, seeking to provide a number of benefits:
+    • Resource Pooling: Combining the available storage space to hold data is a clear benefit, but CPU and memory pooling is also extremely important. Processing large datasets requires large amounts of all three of these resources. 
+    • High Availability: combining can provide varying levels of fault tolerance and availability guarantees to prevent hardware or software failures from affecting access to data and processing. This becomes increasingly important as we continue to emphasize the importance of real-time analytics. 
+    • Easy Scalability: Clusters make it easy to scale horizontally by adding additional machines to the group. This means the system can react to changes in resource requirements without expanding the physical resources on a machine. 
+COMPUTING AND ANALYSING DATA:
+Batch processing is one method of computing over a large dataset. The process involves breaking work up into smaller pieces, placing each piece on an individual machine, reshuffling the data based on the intermediate results, and then calculating and assembling the final result. These steps are often referred to individually as splitting, mapping, shuffling, reducing, and assembling, or collectively as a distributed map reduce algorithm. This is the strategy used by Apache Hadoop's MapReduce. Batch processing is most useful when dealing with very large datasets that require quite a bit of computation.
+While batch processing is a good fit for certain types of data and computation, other tasks require more real-time processing. Real-time processing demands that information be processed and made ready immediately and requires the system to react as new information becomes available.
+Apache Storm, Apache Flink, and Apache Spark provide different ways of achieving real-time or near real-time processing. There are trade-offs with each of these technologies, which can affect which approach is best for any individual problem. In general, real-time processing is best suited for analyzing smaller chunks of data that are changing or being added to the system rapidly.
+KEY TERMS:
+Hadoop: Hadoop is an Apache project that was the early open-source success in big data. It consists of a distributed filesystem called HDFS, with a cluster management and resource scheduler on top called YARN (Yet Another Resource Negotiator). Batch processing capabilities are provided by the MapReduce computation engine. Other computational and analysis systems can be run alongside MapReduce in modern Hadoop deployments.
+Machine learning: Machine learning is the study and practice of designing systems that can learn, adjust, and improve based on the data fed to them. This typically involves implementation of predictive and statistical algorithms that can continually zero in on "correct" behavior and insights as more data flows through the system.
+Map reduce (big data algorithm): Map reduce (the big data algorithm, not Hadoop's MapReduce computation engine) is an algorithm for scheduling work on a computing cluster. The process involves splitting the problem set up (mapping it to different nodes) and computing over them to produce intermediate results, shuffling the results to align like sets, and then reducing the results by outputting a single value for each set.
+Conclusion
+Big data is a broad, rapidly evolving topic. While it is not well-suited for all types of computing, many organizations are turning to big data for certain types of work loads and using it to supplement their existing analysis and business tools. Big data systems are uniquely suited for surfacing difficult-to-detect patterns and providing insight into behaviors that are impossible to find through conventional means. By correctly implement systems that deal with big data, organizations can gain incredible value from data that is already available.
+
+
+ 
+
+
+
+
+

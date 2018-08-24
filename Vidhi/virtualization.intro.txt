@@ -1,0 +1,80 @@
+WHAT IS VIRTUALIZATION:
+Basic meaning of virtualizaton is something that is not real or which appears to be real. DSomething like a mirage. Virtualization refers to the creation of a virtual resource such as a server, desktop, operating system, file, storage or network.
+
+The main goal of virtualization is to manage workload on the traditional computers to make them more scalable.  Virtualization has been a part of the IT landscape for decades now, and today it can be applied to a wide range of system layers, including operating system-level virtualization, hardware-level virtualization and server virtualization.
+
+The most common form of virtualization is the operating system-level virtualization. The is a concept according to which it is possible to run multiple operating systems on a single piece of hardware.  Virtualization technology involves separating the physical hardware and software by emulating hardware using software.When a different OS is operating on top of the primary OS by means of virtualization, it is referred to as a virtual machine.
+
+A virtual machine is nothing but a data file on a physical computer that can be moved and copied to another computer, just like a normal data file. 
+
+Ther are two categories of virtualization:
+1. the hyperviser is between the hardware and the OS instances
+2. the operating system is in between the hardware and the hyperviser, above the hyperviser there are instances
+
+
+Types of virtualization:
+
+1.STORAGE virtualization:
+It involves the grouping of physical storage from multiple network storage devices so that they look like a single storage device. The process involves abstracting and covering the internal functions of a storage device from the host application, host servers or a general network in order to facilitate the application and network-independent management of storage. 
+It is also known as cloud storage.
+
+The management of storage and data is becoming difficult and time consuming.Storage virtualization helps to solve this problem by facilitating easy backup, archiving and recovery tasks by consuming less time. 
+ It can be implemented by using software applications and or appliances.
+There are three important reasons to implement storage virtualization:
+
+   1. Improved storage management in a complex IT environment
+   2. Better availability of storage
+   3. Better storage utilization
+
+2. COMPUTE Virtualization:
+It can be defined as a technique of separating the physical hardware from the operating systems. The benefit of this mechanism is to run multiple OSs on a single physical machine. The same concept can be implemented in the case of a clustered environment or pool of machines. 
+
+During the 1990s there was a fast development in the field opf hardware but the software industry was still in a developing state so there was a rapid increase in  the versions of software than the new softwares to be implemented in the hardware. So a need was realized to get a software that can take the maximum advantage3 of the efficiency of the hardware. Virtualization was found as a  technique to solve this problem.
+
+In the field of computing, virtualization means creating a virtual version of computer-related things, like the OS, application software, network resources or even the hardware resources. Compute virtualization helps in the simplification of traditional computing architectures. It helps in reducing the maintenance costs, as it splits the physical server into many smaller servers. Thus, multiple instances of different servers can be run on different computers easily, without the requirement of powerful processing. Such a stance has completely changed the view of the IT sector, especially with regards to the cost and efficiency of services and software. 
+
+3. DESKTOP Virtualization:
+It is a  technology that separates an individual's PC applications from his or her desktop. Desktop Virtualized systems are generally hosted on a remote central(main) server, rather than the hard drive of the personal computer. Because the client-server model is used in this process. desktop virtualization is also known as client virtualization.
+
+It provides a way to the users of the indivisual systems to stay connected to a single central server.The users may be connected to the central server through a LAN, WAN or over the Internet. 
+
+Advantages:
+1.lower cost of ownership
+2.reduce workload
+3. time management
+4. centralised working
+
+Limitations:
+1.difficulty in maintenence
+2.increase runtime in case of network failure
+3.complexity
+4.risk of improper network management
+5. system breakdown if the central system is affected
+
+4. APPLICATION Virtualization:
+Application virtualization fools the computer into working as if the application is running on the local machine, while in fact it is running on a virtual machine (such as a server) in another location, using its operating system (OS), and being accessed by the local machine.Incompatibility problems with the local machine’s OS, or even bugs or poor quality code in the application, may be overcome by running virtual applications.
+
+Application virtualization attempts to separate application programs from an OS with which it has conflicts, even causing systems to halt or crash. 
+
+Advantages:
+1.fewer resource need
+2.incompatible appplications can run on a local machine simultaneously
+3. cost effective
+4.rapid application deployment
+4.security ny isolation
+
+Limitations:
+1.not all applications can be virtualizzed
+
+5. NETWORK Virtualization:
+Network virtualization refers to the management and monitoring of an entire computer network as a single administrative entity from a single software-based administrator’s console.
+It is designed to allow network optimization of data transfer rates, flexibility, scalability, reliability and security. By automating administrative tasks it completely hides the network's true complexity. 
+Network virtualization is especially useful for networks experiencing a rapid, large and unpredictable increase in usage.
+
+Network virtualization involves dividing available path into independent channels, which are assigned, in real time to separate servers or network devices.It  is accomplished by using a variety of hardware and software and combining network components. 
+
+Software and hardware components come together to offer external or internal network virtualization. The former combines local networks, or subdivides them into virtual networks.
+
+Thus we can say that there are a number of ways in which virtualization can be done to increase the efficiency of the computer systems and to make them work to the fullest, it also makes our work easier and helps in the efficient working of the companies as well as the individuals.
+
+

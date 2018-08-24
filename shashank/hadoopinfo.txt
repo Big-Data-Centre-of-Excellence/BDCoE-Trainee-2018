@@ -1,0 +1,59 @@
+vertical scaling:We increase tthe property of the same system again and again.firstly the property increase but after some time saturation oc$
+Horizontal scaling:We increase the property of multiple system and by the combination of all of them property is increase. If we incease    
+the storage capacity of 10 systems and by combining the storege capacity is highly increased.
+
+HDFS:Hadoop distributed file system.used to store the data in block format.A large file is divided into small part and stored in different 
+system in small memory block.
+
+Hadoop: It is a distributed framework which is used to store the data and analyse on it by different tools.
+3 version are avaliable .
+	If there is a big change occur than verion 1.0 is converted into version 2.0 . Otherwise version 1.0 turned into 1.1 .
+ 
+Hadoop 1 architecture:
+
+hadoop arch. based on master slave archt. where only one is master and many slaves which are controlled by master .The master must be power
+full,its ram, harddisk,processor etc must be high.slave are the normal systems.
+
+There are 5 deamons,deamons are basically java written code or program they are running behind the system.
+5 deamons are (namenode,secondary namenode,datanode,job tracker, task tracker).
+in which (nm,snm,jt)are in master node ,and (tt and dn)are in slave node.
+NM,SNM,DN are the part of HDFS. JT ,TT are the part of Map reducer.
+
+Namenode:It have all the information about the data like its location . It contain data of the data which is known as Metadata.
+All the client request comes into NM than it search from its meta data and particular job run in slave system.
+there are two files FS img and editlog.
+Fs img:It record all the changes in the data and store it.
+editlog:it record all the history of the data . i am not able to remember fsimg and edit log properly.
+
+Secondary NM:It is not a backup of the namenode because it is not automatic. SNM takes the data every 1 hour.SNM send the editlog and 
+fsimg to the NM than name node update both of them nd the FSIMG+EDIDLOG store all the data of the NM and in this way backup is avaliable
+for NM.
+Buffer time: In every 1 hour SNM take the backup from NM this time is called bufeer time.
+
+Data Node:It is found in slave system . It is the area where actually data is stored . In evert 3 sec DN sends heartbeat to the NM which provide the metadata to the NM
+and give information that the slave system works properly.
+the data is stored bt 3 replication factor.2 set of data on the same rack but on different system and last data is stored in different rack.
+The data is stored in small memory block 128mb default value which can be config.
+
+Job tracker:3 work assign for job tracker : 1) job seduling:when more than 1 job have to performed than jon are seduled by the job tracker.
+2) job monitering: when the job are assigned to the slave than jobtracker take the update about the job that how much work is done ,what is pending etc.
+3)resource management: Every job neended resources so JT provide necessary resource for the completition of the job.
+it is the master of deamon of slave .
+
+
+Task tracker:Every job is consist of several task. so it track the task of every job and give the info to the NM.
+More about it not remember.
+
+Blacklist:When no heart beat is send bt the slave node to the master after 4 tries than the particular slave is blacklisted.
+
+Disadvantage of hadoop1 :
+1)SPOF:mainly by Job tracker and name node .ther is   only one JT is it crashed than there is no any backup the whole system fail,if the name node crashed than also there is no any system which take automatically its position.
+2)40,000 task only handle by JT ,only one JT exist bcs of that its capacity to track only 40,000 jobs.
+3)node limitation:there is only one NM which stored limited amount of metadata .
+4)Slots:here static allotment occurs . if we have 1 core and we decided than on 1 core 2 jobs will work 1 for maping and 1 for reducing.
+so if w have 2 maping and no reducing than only one maping work and other will wait till there is one slot is vacant.
+	
+
+Doubt:what is Fsimg and edit log.
+work of tast tracker.
+job seduling a little confusion.

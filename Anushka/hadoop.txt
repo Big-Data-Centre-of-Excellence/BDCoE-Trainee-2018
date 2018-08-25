@@ -1,0 +1,14 @@
+                               HADOOP
+
+1. Hadoop is an open source distributed processing framework that manages data processing and storage for big data applications running in clustered systems.It is the framework that alllows us to atore big data in a distributed environment.It follows the master slave architecture.
+2. Hadoop can handle various forms of structured and unstructured data, giving users more flexibility for collecting, processing and analyzing data than relational databases and data warehouses provide.
+3. Hadoop was created by computer scientists Doug Cutting and Mike Cafarella.
+4. After Google published technical papers detailing its Google File System (GFS) and MapReduce programming framework in 2003 and 2004, respectively, Cutting and Cafarella modified earlier technology plans and developed a Java-based MapReduce implementation and a file system modeled on Google's.
+5. The core components of hadoop are HDFS(hadoop distirbuted file system)
+and MR(map reduce)
+6. HDFS-This allows us to store data of various formats across a cluster.In this a level of abstraction is created from where we can see whole HDFS as a single unit.
+   ->This contains name node(main node that contains metadata) and data node (where actual data is stored and it helps in storing and retrieving data)
+   ->Name node is the master node that contains the metadata i.e.data about data
+   ->Datanode is the slave node which contains the actual data and also it periodically reports to namenode through heartbeat.We replicate the data here (by default the replication factor is 3 i.e.3 copies of each file)
+   ->The components are blocks where storage in the memory is in fragmented form and swap,virtual memory,filesystem.
+7. MR- It allows parallel processing of data in hadoop.Firstly the task is broken down into and then these are processed and accumulated as result.Data is processed parallely in distributed environment due to which processing becomes fast.

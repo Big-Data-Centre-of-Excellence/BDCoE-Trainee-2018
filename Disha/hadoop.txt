@@ -1,0 +1,33 @@
+A hadoop is an open source framework that allows distributed processing of large data sets across the cluster of commodity hardware.It is based on master slave architecture.
+
+FILE SYSTEM-It is the method and data structures that an operating system uses to keep track of files on a disk or partition..(the way files are organised on a system).
+
+                                      HDFS
+
+HDFS-It is the storage layer of hadoop.It is a distributed file system which provides storage in hadoop in distributed fashion.
+
+Its unique feature is DATA REPLICATION.
+-it is based on GOOGLE FILE SYSTEM(GFS).
+-it is designed to run on commodity hardware
+DATA RELIABILITY-- It divides the data into blocks and these blocks are stored on nodes present in hdfs cluster.
+-By default it creates 3 copies of blocks containing data present in the nodes in hdfs
+
+BLOCKS-HDFS split huge files into small chunks known as blocks.These are the smallest unit of data in a file system(128mb).
+
+DATA SCALABILITY:
+horizontal scalability: increase the properties of all system i.e..increasing no of nodes.
+
+HADOOP
+-Open source
+-distributed processing
+-highly fault tolerant
+-reliability
+-high availability
+-scalability
+-economic
+-easy to use.
+
+MAP REDUCE:
+-processing the data
+-heart of hadoop, moves computation close to data
+-allows scalability across servers in hadoop clusters

@@ -1,0 +1,44 @@
+Hadoop 1-
+
+	Hadoop is an open-source framework that was created to make it easier to work with big data. It is developed by Apache and it is based on the Java environment.
+	
+Hadoop 1 Architecture-
+	It works as a master-slave system.
+	Master- Only one System with better Configuration.
+	Slaves- Comodity Hardwares.
+
+Major components-
+	1. HDFS- HDFS is a Hadoop Distributed FileSystem, where our BigData is stored using Commodity Hardware. It is designed to work with Large DataSets with default block size is 64MB.
+	Data in a Hadoop cluster is broken down into smaller units (called blocks) and distributed throughout the cluster.
+	Each block is duplicated twice (for a total of three copies), with the two replicas stored on two nodes in a rack somewhere else in the cluster. 
+	Since the data has a default replication factor of three, it is highly available and fault-tolerant. If a copy is lost HDFS will automatically re-replicate it elsewhere in the cluster, ensuring that the threefold replication factor is maintained.
+	
+	2. MapReduce- It is a Distributed Data Processing Model.
+	It does three operations: map an input data set into a collection of pairs, shuffle the resulting data (transfer data to the reducers), then reduce over all pairs with the same key.
+
+Daemons- Processes running in background that are generally java processes.There are 5 daemons-
+
+	HDFS daemons- *Name Node(NN)
+		      *Secondary Name Node(SNN)
+		      *Data Node(DN)
+	MapReduce daemons- *Job Tracker(JT)
+			   *Task Tracker(TT)
+
+Some of these run on Master node while some on Slave nodes.
+On Master node-
+	1. Name Node- It used to store Meta Data about Data Nodes like How many blocks are stored in Data Nodes, Which Data Nodes have data, Slave Node Details.
+	2. Secondary Name Node- It is used for recovery of data using fsimage(complete snapshot of the file system’s metadata) and edit logs(modifications or changes).
+	3. Job Tracker- Job Tracker is used to assign MapReduce Tasks to Task Trackers in the Cluster of Nodes like Job scheduling,Job monitoring and Resource alocation.
+
+On Slave node- 
+	1. Data Node- It is used to store our Actual Data. It stores data in Data Slots of size 64MB by default.
+	2. Task Tracker- It executes the Tasks which are assigned by Job Tracker and sends the status of those tasks to Job Tracker.
+
+Drawbacks of Hadoop 1- 
+	* Single point of failure.
+	* Max No. of nodes=4,000.(NN limitations)
+	* Max No. of concurrent tasks=40,000.(JT limitations)
+	* No automatic takeover from SNN.
+	* Slots: Static allocation of tasks.
+
+So to overcome these drawbacks Hadoop 2 was launched.

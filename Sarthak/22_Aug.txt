@@ -1,0 +1,26 @@
+BIG DATA-
+	
+	Big data refers to data sets that are so big and complex that traditional data-processing application software are unable to deal with them.
+	Big data is generally characterized by the concept of 4 V's -
+		* Volume- As the name suggests, data is very huge in volume that takes a lot of time to be processed.
+		* Velocity- It is the frequency of incoming data that needs to be processed.
+		* Variety- The type and nature of the data.Ex-Text,Video,Audio.
+		* Veracity- The accuracy of the data.
+	Another V might be considered as-
+		* Value- Refers to the meaningful data from huge chunk of data.
+
+BIG DATA TECHS-
+
+	There are certain techs which help in storing, processing, and analyzing big data.They are-
+	
+	1. Hadoop- Apache Hadoop is an open-source software framework for storing and processing large data sets. It stores data in a distributed 		   fashion on clusters of commodity hardware, and is designed to scale up easily as needed.It only does batch processing of data.
+	
+	2. Spark- Apache Spark is an open source parallel processing framework for running large-scale data analytics applications across clustered 		   computers. It can handle both batch and real-time analytics and data processing workloads.
+	
+	3. Pig- Apache Pig is a high-level platform for creating programs that run on Apache Hadoop. The language for this platform is called Pig 		   Latin.Pig enables data workers to write complex data transformations without knowing Java.
+	
+	4. Hive- Apache Hive is a data warehouse software project built on top of Apache Hadoop for providing data query and analysis. Hive gives an 		   SQL-like interface to query data stored in various databases and file systems that integrate with Hadoop.
+	
+	5. Kafka- Apache Kafka is often used in real-time streaming data architectures to provide real-time analytics.
+	
+	

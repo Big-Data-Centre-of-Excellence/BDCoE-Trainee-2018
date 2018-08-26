@@ -44,5 +44,5 @@ Task Tracker: Manages resource on data and it is closer to the data and processs
 
 If a node is performing a task and it is failing again and again then the namenode notices that that particular data node is unable to perform any task and then does not assign any task to that data node or blacklists it. Which means no further task will be alloted to it now.Maximum 4 attempts are given to a particular data node to check whether it has some problem or not.
 
-If the job tracker in hadoop1.0 fails then rhe whole system crashes. This was the single point of failure for this system. 
+If the job tracker in hadoop1.0 fails then rhe whole system crashes. This was the single point of failure for this system 
 

@@ -1,0 +1,4 @@
+commands of git-
+- git clone url
+-git checkout -b name
+

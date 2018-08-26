@@ -1,0 +1,46 @@
+Hadoop 2 is the second version of hadoop.
+It overcome the main drawbacks of the hadoop 1.0.
+In hadoop 2 YARN concept is used .
+components of Hadoop two are HDFS,YARN,MAPREDUCE.
+
+Architecture of hadoop2:
+YARN:It is used to divide the work of Resource Manager.it contain Job sedular,and App amster.
+Here for every job an app master is declared which moniter the job.If n number of job are present than there are n number of app master
+Basically the work of job Tracker in hadoop 1 is taken by the Resource Manager in hadoop 2.
+
+Active node:It contain the data of the data means meta data.
+Passive name node:It is the backup of the master .It takes backup in terms of FSIMAGE and editlog.
+when the main system is crash than the secondary master automatic take the charge and come into action.
+                
+In the main master Resource Manager is found which have 2 components
+1)job schedular:it provide job resources and schedule the dfferent job to the differnt slave.
+2)app master :it moniter the job which is going on the slave syatem.
+
+In the slave system there are NAME NODE,CONTAINER and DATA NODE,APP Master.
+NODE Manager:It is same as the task tracker.It manage the resources.It view app master and container.
+Container:It provide dynamic memory to the map and reduce task in the core of the computer.
+it is same as slots but here dynamic memory is possible.
+Data node : Smae as the hadoop1 used to store the data.
+
+solution of hadoop1 problem:
+1)SPOF:By the help of passive name node this problem is tackle.Now the resource manager have two parts and its backup is stored in the passive name node.
+2)Slots:By the use of container this problem is tackle.Now the dynamic memory is allowed in the core of the computer.
+3)Nodes limitation:By the concept of HDFS Fidration multiple independent namenode is used above of the block pool by which slaves are connected.It seems as virtulization.
+4)Job tracker limitation:The concept of resource manager and it contains app master of particular job and job schedular the job tracker which is resource manager can handle multiple jobs above than 40,000.
+5)Automatic turnover:The concept of passive node and the second master which take data from passive name node and when the master crashed it takes the charge automatically without and manual interaction.
+
+
+Schedular:Three types of schedular are 
+1)FIFO:First in first out ,here only one job is working at an time .If the job is very bg than the others have to wait for infinite time.
+2)Capacity:Here the cluster is diveded into parts known as sub cluster and 
+in the cluster there are many racks.So different job now have there cluster 
+but in the same cluster in the rack there is no fairness.So concerrency is incresed but fairness is not properly in incresed.
+Elasticity is also incresed ,if one client is online than the master give he 100% cluster the other user.
+3)Fair:Here all the quality is same as the Capacity but fairness is added in the racks also.
+
+IP:It is specific for a system .
+Port no : It is specific for the process or function.
+
+Doubt:What is MR Master?I write it in theMaster system block but i didnt remember it.
+What are the  necessary thing i have to know about Hadoop 3 ? 
+

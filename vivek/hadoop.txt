@@ -1,0 +1,26 @@
+Hadoop :- hadoop is a open source cluster framework.
+* it uses hdfs(hadoop distributed file system)
+*it has primary released version 1.0 :-
+it consists of 5 demons :-
+1. Node Name(runs on master node)
+2. secondary name node (runs on master node)
+3.data node (runs on slave node)
+4. task traker (runs on slave node)
+5. job traker  (runs on master node)
+
+* it has single point of faulire as if job traker failes all the cluster is failed.
+*it does update on after a fixed interval of time it saves a initial file image along with a log file that contains all the update information and after a fixed interval of time it marges it with original image and apply the changes to the master node
+
+*maximum limit of cluster is achived by yahoo is 4000 nodes cluster.
+
+* it connot perform itteration functions.
+* it takes 3 copies of a single data.
+* if a process failes it transfers it to the next nearest node with copy of similar data file.
+
+*if processes failes multiple times on a slave node then it will be blacklisted.
+*if a node failes then master node transfers it's works to another slave node.
+*only to processes can run simuantaunsly one is mapping and another is mapreduce.
+* so, a minimum 2 core processor is required.
+* is a core is free it will not be allorted work due to static allortment.
+*due to many limitations version 2.0 is released.
+* it does batch processing.

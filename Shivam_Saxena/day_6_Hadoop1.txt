@@ -1,0 +1,52 @@
+Day 6: Basic Architecture of Hadoop version 1.
+
+Hadoop: Open source cluster computing framework.
+
+Need of Haddop: *Storage:-We are getting a very large amount of data in TB and PTB daily. Simple PC's and even High end computers are unable to store this large amount of data efficiently.
+		*Processing:-This large amount of data is needed to be processed to extract valuable information from it in less time. But simple PC's and high end computers fail to process this large 			 	     amount of data efficiently at once due to RAM limitations.
+
+Hadoop 1: It consist of following 2 components:
+		->HDFS(Hadoop Distributed File System): Used to store data.
+		->MapReduce: Used to process data
+
+Hadoop 1 Architecture: Master-Slave system.
+	Basic idea: When we get a huge amount of data to store and process in Hadoop, Hadoop generally performs following tasks:
+			1.Data gets fragmanted into the block sizes of 64MB each.(So that it can be proccessed by creating swap partition)
+			2.Distributes the data among the slave nodes.
+			3.Each block of data gets replicated n times in different slave nodes.(Default Replication factor n=3).
+			4.Each block present on slave node system is processed by MapReduce.
+
+	When we start Hadoop, 5 daemons(Background hidden processes) that are basically java processes starts:
+			->HDFS Daemons:			
+				1.Name Node(NN)
+				2.Secondary Node(SNN)
+				3.Data Node(DN)
+			->MapReduce Daemons:
+				4.Task Tracker(TT)
+				5.Job tracker(JT)
+
+							[SNN]--->[NN]
+								   |
+								   |
+								 [JT]
+								/    \
+							       /      \
+							      /        \
+							    [TT]      [TT]
+							    [DN]      [DN]
+		
+			Master node: 1.[NN-Name Node]: Master daemon of HDFS. Contains all the Meta data of all the sub nodes.
+				     2.[JT-Job Tracker]: ->Job scheduling
+							 ->Job Monitoring
+							 ->Resource allocation
+				     3.[SNN-Secondary Name Node]:fsImage(Snapshot of HDFS)+Edit Logs(Modifications in the system). Maintains a backup of the whole system.
+			
+			Slave node: 4. [T.T-Task Tracker]: Performs actual task of MapReduce.
+				    5. [D.N-Data Node]: Stores actual data.
+	Drawbacks of Hadoop 1: *Single point of failure.
+			       *Max No. of nodes=4,000.(NN limitations)
+			       *Max No. of concurrent tasks=40,000.(JT limitations)
+ 			       *No automatic takeover from SNN.
+			       *Slots: Static allocation of tasks
+	
+Doubt:Does JT also performs MapReduce? If yes How?

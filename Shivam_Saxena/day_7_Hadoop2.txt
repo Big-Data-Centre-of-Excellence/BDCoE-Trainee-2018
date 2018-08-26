@@ -1,0 +1,43 @@
+Day 7: Hadoop 2
+
+Hadoop 2: It is the second version of Hadoop, created in order to minimize the drawbacks and limitations of Hadoop 1.
+
+Major components of Hadoop 2: ->HDFS
+			      ->YARN(Yet another source negotiator)
+			      ->MapReduce v2
+
+YARN: The basic idea is to divide the functionalities of resource management and job scheduling/monitoring into separate daemons. The idea is to have a global ResourceManager (RM) and per-application ApplicationMaster (AM).
+
+
+Hadoop 2 Architecture: Daemons: 1. ANN: Active Name Node
+				2. PNN: Passive Name Node
+				3. RM: Resource Manager
+				4. NM: Node Manager
+				5. DN: Data Node
+				
+							[PNN]-->()-->[NN]-->[RM: 1.Scheduler 2. Application Manager]
+										/		\
+									       /		 \
+									      /			  \
+								           {[NM]	         {[NM]
+									 [App Master]		[App Master]
+									    [DN]		   [DN]
+									 [Containers]}		[Containers]}
+												 	       
+		       		
+				1. Resource manager: Has 2 components, Scheduler and Application Manager.It reside in Master system. (Tackle SPOF)
+						->Scheduler provides required resources to Applications.
+						-> Application Manager monitors App Masters in slave nodes.
+				2. Name node: Contains Meta data information of data nodes. It resides on Master system.
+				3. Node Manager: Per-machine level component which is responsible for containers and  monitoring their resource usage.It resides on slave system.(Tackles slots)
+				     		->Containers are similar to Slots in Hadoop 1 but provide dynamic allocation of Map and Reduce tasks.
+				     		->App master assigns and monitors tasks per slave system. It interacts with node manager as well as Resource Manager.
+				4. Data nodes: Contains the actual data.
+				5. Passive Name Node: It is a stand by node. Data node sends status to both Active as well as Passive node. So when Name Node fails, it automatically takes over.
+				
+				*HDFS Federation: Federation in Hadoop uses multiple independent Namenode/namespaces to scale the name service horizontally. it tackles the 4,000 nodes limitations.
+
+
+
+*Doubts: 1. How 40,000 tasks limitation is tackled by Hadoop 2?
+	 2. HDFS Federation?

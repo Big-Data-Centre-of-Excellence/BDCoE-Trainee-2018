@@ -1,0 +1,34 @@
+SPARK
+
+
+Hadoop had certain disadvamtages due to which there was need of a better software.
+
+
+Disadvantages of Hadoop:
+
+1)Security Concerns
+
+2)Vulnerable:
+Hadoop is written entirely in java and java has been exploited by cybercriminals, hence it is bit risky to use hadoop.
+
+3)Not good for smaal data
+
+Due to these disadvantages a new software called spark was developed.
+
+Spark is an open source software which works in NEAR REAL time.
+It is hundred times faster than Map Reduce.
+It is polygat i.e. programmed in different languages. 
+
+
+Resilient Distributed Dataset:
+
+In this, there are two processes
+
+1)Transformation -> which does the processing part.
+
+2)Action -> which gives the output of the processed part.
+
+
+Lazy Processing:
+
+According to this, the process part is done internally and the output of the processed part is not shown until the user asks for it through "filter1.collect".

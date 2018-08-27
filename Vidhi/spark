@@ -1,0 +1,39 @@
+Spark:
+Spark uses a master/worker architecture. It means that the namenode is on the master system and the tasks are performed on seperate worker or slave computers.Apache Spark is considered as a powerful complement to Hadoop, big data’s original technology of choice. Many ecommerce sites use spark instead of hadoop like Alibaba.
+
+Apache Spark has a well-defined architecture where all the components and layers are loosely bound and attached with various extensions and libraries. Apache Spark Architecture is based on two main components-
+
+    Resilient Distributed Datasets (RDD)
+    Directed Acyclic Graph (DAG)
+
+Resilient Distributed Datasets (RDD):
+It is basically a data structure.RDD’s are collection of data items that are split into partitions and can be stored in memory on workers nodes of the spark cluster.Spark RDD’s support two different types of operations – Transformations(transfer of memory spaces) and Actions(the execution commands).
+
+Directed Acyclic Graph (DAG):
+Direct - Transformation is an action which transitions data partition from one to another state.
+
+Acyclic -Transformation cannot return to the older partition
+
+DAG is a sequence of computations performed on data where each node is an RDD partition and edge is a transformation on top of data.  The DAG abstraction helps eliminate the Hadoop MapReduce multi0stage execution model and provides performance enhancements over Hadoop.
+Spark Architecture Overview .
+
+Spark Driver – Master Node of a Spark Application
+
+ It is the central point and the entry point of the Spark (program can be written in Scala, Python, and R). The driver program runs the main () function of the application(sc i.e., the spark context or the main fuction of spark).
+
+    The driver program that runs on the master node of the spark cluster schedules the job execution and negotiates with the cluster manager.
+    It translates the RDD’s into the execution graph and splits the graph into multiple stages.
+    Driver stores the metadata about all the Resilient Distributed Databases and their partitions.
+    Cockpits of Jobs and Tasks Execution -Driver program converts a user application into smaller execution units known as tasks. Tasks are then executed by the executors i.e. the worker processes which run individual tasks.
+    Role of Executor in Spark Architecture
+
+Executor is a distributed agent responsible for the execution of tasks. Every spark applications has its own executor process. Executors usually run all time of a Spark application and this phenomenon is known as “Static Allocation of Executors”. However, users can also opt for dynamic allocations of executors where they can add or remove spark executors dynamically to match with the overall workload.
+
+    Executor performs all the data processing.
+    Reads from and Writes data to external sources.
+    Executor stores the computation results data in-memory, cache or on hard disk drives.
+    Interacts with the storage systems.
+
+
+
+

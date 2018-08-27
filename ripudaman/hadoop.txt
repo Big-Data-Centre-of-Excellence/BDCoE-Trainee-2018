@@ -1,0 +1,61 @@
+Hadoop is a framework for the analysis of big data. Hadoop have 2 components.
+
+1) hdfs . Hadoop distributed file system.
+
+2) mapreduce . (Processing big data)
+
+
+
+
+
+Hdfs.. It is basically a file storing system. Used to store big file in the form of small cluster. Master slave process is followed. If we are using hdfs for small file storing then it is not worthy. In hdfs suppose a data is of 1TB then it store in different slave having data 128mb. Also the replica of data also take place in Hadoop so the the loss of data can be reduce.
+
+
+
+
+
+Mapreduce ... It's is process of analysis of data stored in hdfs.
+
+Following steps are involved for mapreduce ( * at basic level)
+
+1) splitting  . First of all big data values is splits into small small parts . suppose I have a data of 3 line then it split the data in 3 parts each part have 9ne line
+
+2) mapping. Then the mapping of data take place . It is a process of making keys and values.
+
+Suppose I have a data like car car bus then after mapping we have car--> 1,  car --> 1, bus --> 1
+
+3) shuffling.  After mapping the shuffling of data take place . Suppose car is present in different line of part of splitting then it collects all the keys value of car together
+
+4) reducing. Let understand reducing by simple example. Suppose after shuffling data we have is car --> 1 car--> 2
+
+After reducing data we have is car--> 3
+
+Similarly we will the reduced data from different slave.
+
+And the process of mapreduce is success.
+
+
+
+
+
+Different key points of Hadoop.
+
+Data is inserted in hdfs by flumes and sqoop
+
+Yarn is the main processing component of Hadoop. Yet another resource negotiator.
+
+Some more tools used in Hadoop are pig hive spark etc
+
+
+
+
+
+
+
+Hadoop cluster is of 3 type.
+
+1 standalone Hadoop cluster:: There is no deamons in this cluster and no distributed file system is followed
+
+2) pseudo Hadoop cluster :: all the Hadoop deamons are in local machine distributed file system is followed.
+
+3) multi node Hadoop cluster::  It is a mode in which deamons run on cluster of machine.

@@ -1,0 +1,48 @@
+Hadoop-
+Hadoop is an open source distributed processing framework that manages data processing and storage for big data applications running in clustered systems.It has many features to work for the handling of the data that is constantly being generated at such a large scale. Hadoop can handle various forms of structured and unstructured data, giving users more flexibility for collecting, processing and analyzing data than relational databases and data warehouses provide.Formally it was known as Apache Hadoop, it is developed as part of an open source project by the Apache Software Foundation (ASF).
+
+It contains a cluster of commodity servers and thousands of nodes that are connected to each other and deals with massive amounts of data.
+
+Structure of hadoop-
+The core components in the first version of Hadoop were MapReduce, the Hadoop Distributed File System (HDFS) and Hadoop Common, a set of shared utilities and libraries.
+HDFS-
+Hadoop is ideal for storing large amounts of data, like terabytes and petabytes, and uses HDFS as its storage system. HDFS lets you connect nodes (commodity personal computers) contained within clusters over which data files are distributed.
+
+It contains two sets of nodes - namenode and data node. There is also one more node that is the secondary node.
+Name node is the central node which devides the tasks and data and sends them to the dat nodes. There is a replication factor of 3. Which means that a given data is stored 3 times in three different data nodes. This is to reduce the chances off data loss.If by chance data is lost from one of the nodes then there are two backups of the same data. So it ensures data secuirty.
+
+If the main node that is the name node is lost then then there is an edit log in which the recent changes are saved and an FS where all the changes are saved that are made since the beginning of the task. So the edit log+ the FS gives the secondary node which is the exact copy of the name node or the backup of the name node. All the data that is stored in the name node is also stored in the secondary node and hence the data is not lost.
+But there was a problem that the secondary node cannot directly take over the name node in case the namenode fails. So inspite of the backup, the secondary nide cannot take over automatically and the system fails. This was one of the failure of thr hadoop1.0 version.
+
+There is a system through which thw name node can check whether a particular data node is working or not. The data node sends a heartbeat to the name node in every 3 seconds. Through which the name node can be sure that a data node is working. So if the heartbeat is not received then the namenode comes to know that the data node has failed.
+
+HDFS is a distributed file system. In which the whole memory needed to be occupied is divided in small blocks of memory.So that they can be processed easily. The memory is fragmented. 
+Virtual memory =RAM+Swap memory
+In  hadoop the block size =64 mb in hadoop1.0 and 128mb in hadoop2.0
+
+Map Reduce:
+This is the main task in the hdfs. Mapreduce is the combination of two tasks mapping and reducing.
+
+Mapping means the division of tasks into smaller sizes so that the processing can be done fast and easily. Reducing means combining the dissembled tasks into one , this step is the final step in which the smaller processed tasks are combined into one to give the final result.
+
+HDFS includes 5 daemons:
+Daemons are the tasks which run in the back ground all the time but cannot be seen in the front screen.Thus they are called daemons because they are kind of invisible to the screen.
+The 5 daemons of hadoop1.0 incude:
+Name node
+Secondary node
+Data node
+Task tracker
+Job tracker
+
+Secondary name node is on one system and name node and job tracker run on the master system which controls all the activities. While the task tracker and the data nodes run on the slave computers.
+Namenode, secondary node and the data node are related to the storage of the data whereas the task tracker and the job tracker are related to the processing of data. FS is similar to the snapshots. Snapshots are the images that are clicked which help to track where what data is stored.
+
+Edit log: this is to store the changes made in the buffer time. This is temporary storage memory.
+
+JOb Tracker: includes Job scheduling, job monitoring and resource allocation
+Task Tracker: Manages resource on data and it is closer to the data and processses the data in actual.
+
+If a node is performing a task and it is failing again and again then the namenode notices that that particular data node is unable to perform any task and then does not assign any task to that data node or blacklists it. Which means no further task will be alloted to it now.Maximum 4 attempts are given to a particular data node to check whether it has some problem or not.
+
+If the job tracker in hadoop1.0 fails then rhe whole system crashes. This was the single point of failure for this system 
+

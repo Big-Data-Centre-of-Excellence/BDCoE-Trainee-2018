@@ -1,0 +1,71 @@
+HDFS ARCHITECTURE:
+
+consist of master/slave architecture in which namenode is master that stores metadata and datanode that stores the actual data.
+
+HDFS NAMENODE:
+ -known as masternode,stores metadata i.e..number of data blocks,replicas.
+ -should be on a reliable hardware.
+-manages file system namespace.
+-executes file system execution such as naming,closing,opening files/directories.
+
+-> all data nodes sends a heartbeat and block report to the namenodein the hadoop cluster.Ensures that the data nodes are alive.A block report contains a list of all block on a datanode.
+-> Namenode is also responsible for taking care of the replication factor of all the blocks.
+
+file present in namenode metadata are as follows:
+
+FsImage::
+fsimaage in namenode is an "imagefile".fsimage contains the entire filesystem namespace and stored as a file in the namenode's local file system.
+
+EDITLOGS::
+it contains all the recent modification made to the filesystem on the most recent Fsimage.
+
+                           DATANODE
+
+-datanode performs read and write operation as per the required.they can deploy on commodity hardware.
+
+TASK:
+-block replica creation,deletion.
+-manages data storage of the system,datanode send heartbeat to the namenode to report the health of HDFS.By default the frquency is set to 3 seconds.
+
+                      SECONDARY NAMENODE:
+
+ -Downloads the Fsimage and editlogs from the namenode
+-And then merges editlogs with the Fsimage.it keeps edit log size withina limit.
+-stores modified fsimage into persistant storage and we can use it in the case of namenode failure.
+
+                      CHECKPOINT NODE:
+
+-Periodically creates chekpoint in the namespace.It stores the latest checkpoint in a directory that has the same structure as the namenode's directory.
+
+                      BACKUP NODE:
+A backupnode is always synchronized with the active namenode state.Namenode support one backup node at a time.
+                       BLOCKS:
+the default size of hdfs block is 128mb which we can configure as per the needs.All blocks of the file are the same size except the last block,which can be the samesize or smaller.
+-each block replicate 3 times stored on different datanodes
+-no of copies or replicas of each block of a file in hdfs architecture is replication factor.
+
+
+RACK AWARENESS:
+To improve network traffic while reading/writing HDFS file, Namenode chooses the datanode which is closer to the same rack or nearby. It recieves rack information by maintaining the rack ids of each datanode. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

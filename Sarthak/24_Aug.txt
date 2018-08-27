@@ -1,0 +1,55 @@
+Hadoop 2-
+
+	Advantages of Hadoop 2 over Hadoop 1 is the improved reliability and speed improvements that come with the improvements to HDFS federation and the introduction of YARN, which separates processing management from resource management.
+
+Major Components-
+	1. HDFS v2
+	2. YARN(Yet Another Resource Negotiator)
+	3. MapReduce
+
+YARN- 
+	It is the framework responsible for assigning computational resources for application execution.Basically it is doing Cluster Resource Management.
+	YARN consists of three core components-
+	1. Resource Manager (one per cluster)- Resource Manager is again divided into two components-
+		*Scheduler- It is responsible to schedule required resources to Applications (that is Per-Application Master).
+		*Application Manager- It monitors App Masters in slave nodes.
+
+	2. Application Master (one per application)- 
+		*It interacts with both Resource Manager’s Scheduler and Node Manager.
+		*It interacts with Scheduler to acquire required resources.
+		*It interacts with Node Manager to execute assigned tasks and monitor those task’s status.
+	3. Node Managers (one per node)-
+		*It manages the life-cycle of the Container.
+		*It monitores each Container’s Resources utilization.
+
+Container-
+	Container is a portion of Memory in HDFS (Either Name Node or Data Node).
+	In Hadoop 2, Container is similar to Data Slots in Hadoop 1.
+
+Architecture- 
+
+	All Master Nodes and Slave Nodes contains both MapReduce and HDFS Components.
+	One Master Node has two components-
+		*Resource Manager
+		*Name Node
+	In Hadoop 2, some more Nodes acts as Master Nodes. Each this 2nd level Master Node has 3 components:
+		*Node Manager
+		*Application Master
+		*Data Node
+	Each this 2nd level Master Node again contains one or more Slave Nodes.These Slave Nodes have two components:
+		*Node Manager
+		*Data Node
+
+Features-
+
+	1. YARN does cluster resource management and processing is done using different processing models.
+	2. HDFS Federation provides horizontal scalability of Name Nodes.
+	3. NameNode is no longer a Single Point of Failure due to the presence of Passive Name Node.
+	4. Scalable up to 10000 nodes per cluster and 100000 concurrent tasks.
+	5. Works on concepts of containers which are flexible in mapping and reducing.
+
+
+
+
+
+

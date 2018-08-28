@@ -1,0 +1,17 @@
+Big Data (overview)
+In common term big data is generally collection of very large data which may be complex in structures and the processing of data is difficult.
+
+5 V's that determine whether data is big data or not:
+1.Volume:the amount of data generated
+2.Velocity:the rate at which data is generated
+3.Value:how much the data is useful/valuable
+4.variety:it implies the type of data i.e. structure,semi-structured,unstructured
+5.veracity
+
+
+doubt:what does the term veracity means?
+
+some reports says that(from internet):
+->data generaated in past 2 years is more than the previous history in total.
+->by 2020,total digital data will grow to 44 zettabytes approx
+1zb=1 trillion gb

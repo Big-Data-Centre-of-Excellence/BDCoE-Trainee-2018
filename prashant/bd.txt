@@ -1,3 +1,4 @@
+
 Big Data (overview)
 In common term big data is generally collection of very large data which may be complex in structures and the processing of data is difficult.
 
@@ -7,6 +8,10 @@ In common term big data is generally collection of very large data which may be 
 3.Value:how much the data is useful/valuable
 4.variety:it implies the type of data i.e. structure,semi-structured,unstructured
 5.veracity
+
+structured:name roll no
+semi-structured:xml file
+unstructured:photos
 
 
 doubt:what does the term veracity means?

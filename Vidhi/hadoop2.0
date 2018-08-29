@@ -1,0 +1,28 @@
+Hadoop2.0:
+It was a generational difference from hadoop 1.0. It had many new features including the HDFS and the YARN which worked as the operating system. This system was better than the batch operating system that was used in the hadoop1.0.
+
+YARN is a re-architecture of Hadoop that allows multiple applications to run on the same platform. With YARN, applications run “in” Hadoop, instead of “on” Hadoop.The fundamental idea of YARN is to divide the two major responsibilities of the JobTracker and TaskTracker into separate entities.The tasks of the Job Tracker and the Task Tracker are divided into 3 components:
+Resource manager: It divides the resources between the competing applications.
+
+Node manager:runs on each node in the cluster and takes direction from the ResourceManager. It is responsible for managing resources available on a single node.
+
+Application Master: an instance of a framework, an Application Master runs a specific YARN job and is responsible for negotiating resources from the ResourceManager and also working with the NodeManager to execute and monitor Containers(provide dynamic memory allocation).
+
+The actual data processing occurs inside the containers by the applicartion master.
+Name node:it can be easily taken over in case of failure. This single point of failure which was occuring in the hadoop1.0 was overcome in this new version.
+Snapshots:these were useful in the recovery of data in case if it is lost.It works to promote the safety of data and data backup.
+
+Hadoop2.0 uses the concept of virtualization :there can be more than one name nodes accessing a system and each name mode is in the view that it is the only one working in that particular but it is not true. In reality there are clusters and each namemode is independent of the other nodes.
+
+As a task is performed in a container and if the container is failed then a new conatiner is launched instantly to avoid the time lag.
+If the node manager fails then the fault is reported to the application manager and a new node is launched by it. This is to ensure that the task is performed smoothly.
+The system replicates the outputs generated at the end of the task but not the intermediate outputs so if the intermediate progess is lost it needs to be performed again.
+If the application master fails then the application manager launches a new one with the new progessed data.
+The concept of RPC(remote procedure call) that means a fuction is called that is present in some other computer that is connected.
+RMI- Remote method innovation
+Map reduce model is used to solve problems in the hadoop2.0 version.
+It is composed of two functions that is mapping and reducing:
+Mapping: a task is divided into smaller tasks and then the processing is done.
+Reducing: it refers to the task of collecting those small tasks and then combining them to give a final answer.
+
+

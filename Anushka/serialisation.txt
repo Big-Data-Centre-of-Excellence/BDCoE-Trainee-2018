@@ -1,0 +1,16 @@
+                           SERIALISATION
+
+
+1. Process of converting an object into stream.Though we see data in a structured form, the raw form of data is a sequence or stream of bits. This raw form of data is the one that travels over the network and is stored in RAM or any other persistent media. Serialization is the process of converting structured data into its raw form.
+2. Deserealisation is the process of reconstructing an object that has been serialised before.
+3. In serialisation we are converting an object into stream of bytes.
+4. This is used to:
+   ->store data/state of object.
+   ->transmit data/state of an object over a network and then reconstruct      it. 
+   ->clone an object without overriding clone.
+5. It can also be considered as sending object over a line.
+6. If we want to make duplicate of a data structure and all its contents into a new variable we have to do serialisation.
+7. Serialisation format are JSON,YAML,XML.
+8. We can also say that it is to transfer data over a network from one system to another.
+9. For converting object data into byte data.
+10. To maintain object state.

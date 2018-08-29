@@ -1,0 +1,23 @@
+Spark is a cluster computing platform.
+Cluster means  group of computers ,computation means  calculations. Basically what it do is that it do its calculation in the memory itself. Rather than transfering i/p and o/p data in the memory. Its processing is almost near run time. Spark is also easy to use. Also supports lazy evaluation.
+Lazy evaluation:  
+Latency ; Time between creation of two RDD layers.
+ It uses the concept of RDD. RDD is kind of Data structure. It is immutable that is it can be modified but can't be edited.
+ As we can't directly access to ant data structure, we need an object in similar manner we create an object for RDD to access called SC.
+ SC : Spark context which act as an object for RDD.
+All of the code is written on master node. And executed on worker node.
+
+Fault Tolerance : It is capacity to handle the fault. 
+This is way how can we protect our data before occurence of fault.
+ 
+Reading : exactly once
+Transformation : Exact once.
+Output . Atleast once. 
+
+DAG: Distributed acyclic graph - It keep data of RDD's transformation. 
+*If namenode is crash it can be recover from editlog file.
+
+EDITLOG: Editlog file have the whole changes made in the namenode after the creation of name node till date. 
+
+*If datanode is crash we have RDD function so only last information will be lost.
+

@@ -1,0 +1,45 @@
+PIG:
+It is a high level data flow language. Pig is generally used with Hadoop, we can perform all the data manipulation operations in Hadoop using Pig.It is like an abstarction over map reduce i.e., it hides the complexities of the map reduce programmes which are needed to be written in java. The same codes can be written in very small size using pig.
+
+The pigscript codes are written in piglatin language.There are no if else statements used in pig. Piglatin is the language for writing the code and an environment is needed to run the pig codes written in piglatin.Apache Pig has a component known as Pig Engine that accepts the Pig Latin scripts as input and converts those scripts into MapReduce jobs.
+
+Need of apache pig:
+1.Programmers not so good in java can write codes easily in Pig Latin without getting into the complex syntax of java
+2.Apache Pig uses multi-query approach, thereby reducing the length of codes.It is an sql like labguage so it is easiler to learn pig if one is familier with SQL.
+3.    Apache Pig provides many built-in operators to support data operations like joins, filters, ordering, etc. In addition, it also provides nested data types like tuples, bags, and maps that are missing from MapReduce.
+
+It has built in functions for join,sort and filer operations.The execution of the tasks in pig is optimized on their own so we only need to take care of the semantics of the language.
+
+Pig provides the facility to create User-defined Functions in other programming languages such as Java and invoke or embed them in pig scripts.
+It can handle all types of data like structured, semi structured and unstructured.
+
+Apache pig components:
+Parser:
+Initially the Pig Scripts are handled by the Parser. It checks the syntax of the script, does type checking, and other miscellaneous checks.The output of this will be a DAG(directed acyclic graph).In the DAG, the logical operators of the script are represented as the nodes and the data flows are represented as edges.
+Optimizer:
+The logical plan (DAG) is passed to the logical optimizer, which carries out the logical optimizations such as projection and pushdown.
+Compiler:
+The compilation of this data into mapreduce task is done by the compiler.
+Execution engines:
+The work of the execution engine is to work with the submitted mapreduce jobs into the hadoop system and produce the required outputs.
+Piglatin data model:
+A single value in piglatin is called an atom irrespective of the type of data stored.
+Tuple:
+A record that is formed by an ordered set of fields is known as a tuple, the fields can be of any type. A tuple is similar to a row in a table of RDBMS.
+Bag:
+It is an unordered set of tuples.
+Map:
+A map is a set of key-value pairs. The key needs to be of type chararray and should be unique. The value might be of any type. It is represented by ‘[]’
+Relation:
+It is a bag of tuples.The relations are unordered.
+Apache pig execution modes:
+Local mode: here all the files are installed and all files run from a local host or system. there is no need of HDFS.It is generally for testing purpose.
+MapReduce mode:MapReduce mode is where we load or process the data that exists in the Hadoop File System (HDFS) using Apache Pig. In this mode, whenever we execute the Pig Latin statements to process the data, a MapReduce job is invoked in the back-end to perform a particular operation on the data that exists in the HDFS.
+
+Execution mechanisms:
+Interactive mode:this can be implemented using grunt shell.
+Batch mode: You can run Apache Pig in Batch mode by writing the Pig Latin script in a single file with .pig extension.
+Embedded Mode − Apache Pig provides the provision of defining our own functions (User Defined Functions) in programming languages such as Java, and using them in our script.
+
+
+

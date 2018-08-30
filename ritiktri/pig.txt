@@ -1,0 +1,52 @@
+PIG
+
+
+Apache PIG is a high level databflow system
+It was developed by Yahoo.
+It allows abstraction over map reduce.
+(Abstraction- It is the act of showing the essential features without showing background details).
+It has two main components- Pig Latin
+                            Pig Execution
+
+
+Pig Latin:
+It involves simple queries.
+
+Pig Execution:
+It converts queries to map reduce.
+
+
+The main advantage of using PIG was that the code ehich was written in 200 lines in hadoop could be written in only 4 lines in PIG.
+Thus it was easy to use.
+
+PIG had built in support for commands like join,filter,etc.
+
+Pig involved all types of data:
+
+Structured
+Eg-> name,roll no,etc
+
+Semi-Structured
+Eg-> xml file
+
+Un-structured
+Eg-> videos,images,etc.
+
+
+
+FEATURES:
+
+Ease of programming
+Optimisation
+Extensibility
+UDF(User Defined Function)
+
+
+ARCHITECTURE:
+
+1)  The data from user tables is passed on to HDFS.
+2)  HDFS passes this data for furthur processing and loading. 
+3)  After processing the data  stores back to HDFS.
+
+
+

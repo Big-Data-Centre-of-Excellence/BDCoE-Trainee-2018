@@ -1,0 +1,41 @@
+Spark is a open source cluster computing framework.
+Open source means it source code is avaliable for everyone ,anyone can edit it and use it .
+Cluster means: A group of computer are used.
+Computing:Means processing or calculation.
+
+
+Why Spark come :
+1)Batch processing: Hadoop work on batch processing but spark work on near
+real time processing.
+2)In the hadoop a lot of input and output operation are performed which make procesing slow.
+on the other hand in spark only one time input ,output processing is done ,than every work is done in the memory.
+
+
+Spark use the concept of RDD:Resilient Distributed Datasets.
+Resilient means reliable i.e every file is stored in the form of small blocks 128MB in the data node.
+due t the replication factor the same block is stored in different data node.
+So if one data node is crased than due to the copy of the data the RDD willbe restored .
+Distributed:Every file is distributed in the form of 128MB block in whichn different data not work.
+RDD is immutable i.e. if we can edit the RDD.
+
+Spark Context: it is like the main function of the java program, without it not a single processing is done .
+Sc resides in the master.
+
+Spark Ecosystem:It consist of Spark core :here the RDD is stored or formed.
+Sprak SQL ,Spark streaming,Spark MILIB,SPARKX graph,sparkr various program work on spark core.I didn't know the function of these tools.
+
+Features od Spark:
+1)100 times faster:Due to processinf in the memory the processing is fast .
+2)Poligot:It enable user to program in various language it support various language.
+3)Lazy evaluation:Without the action command the data is not stored in the ram .
+even the bolck will formed for differnt step but the data is not in the ram.
+ML lib:Bcs og MI library and real time processing the program of MI will executed very fast so MI is easy here.
+4)Easy to handle and run.
+
+
+
+DAG: Distributed acyclic graph:IT is the graph which represent several command or several step is depend on each other.
+
+Fault Tolerance : It is capacity to handle the fault. 
+we can protect our data bcs og fault toleranc.
+

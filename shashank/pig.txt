@@ -1,0 +1,31 @@
+Pig is a Highlevel Dataflow language.It was introduced by Yahoo.We write simple quries and these quries converted into map reduce program
+by pig this map reduce is executed over hadoop cluster.
+Basically we are getting abstraction over map reduce by using apache pig.
+UDF:user define function concept is applicable in pig.
+
+Pig components:Two components are:
+1)Pig Latin:It is the language which is used to write quries in the pig.
+2)Pig execution:It is used to convert the quries into mapreduce program which are executed over hadoop cluster.
+
+Pig Architecture:
+1)pig latin script:It contain the all the commands and the which have to be processed.
+2)Grunt shell: Here we write our quries by the help of some pig latin command.
+3)Parser:i didn't understand it.
+4)compiler:It compile the quries and convert it into the java program.
+5)Execution engine:It is the engine which is used to execute the program and show the result.
+
+Modes:pig run in two types of mode
+1)map reduce mode:It is the mode where the data is analysed over the mapreduce .The is stored in the Hdfs basically the input and ouput operations are done in the hdfs.
+it is called by the command PIG.
+2)Local mode:Here the data is stored in the local files .And the processing also done in the local file system .It is the centralised system.
+this mode is called by the command 'pig -xlocal'
+
+Hadoop vs Pig:
+IN hadoop the program is written in long java code but in pig simple pig latin code are used to execute our quries.
+Developer does not have to know the knowledge of java an other language.
+In short the developmpent time and lines are become less ny the help or ig.
+
+Note:Pig doesn't replace the hadoop or mapreduce .
+
+Doubts:1)didn'tunderstan the data models.(tuples and map).
+

@@ -1,0 +1,48 @@
+Day 8 and 9: Learnt basic principles and architecture of Apache Spark. Installed Spark on Linux.
+
+Apache Spark: Spark is an open source framework based on cluster computing, designed for faster data processing. It is based on Hadoop MapReduce and increases its speed and efficiency. It basically 		      increases the MR capabilities.
+	      Spark has its own Cluster management system. It can run in standalone mode.
+	      It uses Hadoop for: ->Storing(HDFS)
+				  ->Processing(MR)
+
+Features of Spark: *Nearly realtime processing.(Microbatches)
+		   *Faster processing as compared to Hadoop MR.
+		   *Lazy evaluation.
+		   *Supports multiple languages
+		   *High level APIs
+
+RDD(Resilient Distributed Datasets):It is the fundamental data structure of Spark. It is an immutable distributed collection of objects. Each dataset in RDD is divided into logical partitions, which may be computed on different slave nodes of the cluster. 
+
+Need of RDD: The simple MapReduce contains many Reading and Writing operations from the disc that decreases the computation speed. So to tackle this problem, we use RDDs.
+
+Map Reduce: ->Data on disc is distributed among slave nodes
+ 	    ->1st iteration :Data is processed in the RAM in slave nodes and stored again in the disc.
+ 	    ->2nd iteration :Data is processed in the RAM in slave nodes and stored again in the disc.
+	    .
+   	    .
+	    .
+	    ->All data processed and saved in the disc.
+
+Spark RDD: ->Data on disc is distributed among slave nodes.
+	   ->1st iteration :Data is processed in the Distributed Memory in slave nodes and stored in same distributed memory, creating a new RDD.
+	   ->2nd iteration :Data is processed in the Distributed Memory in slave nodes and stored in same distributed memory, creating a new RDD.(Transformation: Producing new RDDs from existing RDDs)
+	   .
+	   .
+	   .
+		(RDD Lineage is built)
+	   ->All data processed and saved in the disc.
+
+DAG(Directed Acyclic Graph): Apache Spark DAG allows the user to go into the stage/iteration of computation/processing and expand on detail on any stage. It basically tracks each Map Reduce computation 				     data stored in RDDs.
+			     Advantages of DAG: *Fault Tolerance
+						*Recovery of lost RDDs
+						*Better optimisation than MapReduce
+Architecture:
+					[Spark Context(SC)]
+						|
+					 [Cluster Manager]
+					     /      \
+					    /        \
+				     [Worker Node]  [Worker Node]
+	
+Doubt: How Spark is fault tolerant?
+						

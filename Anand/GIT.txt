@@ -1,0 +1,56 @@
+What is GIT?
+Git: Git is an open source tool used for version control.
+
+Version control: Version control is something which manages any change in the documents ,files, programs etc.
+There are two types of version control systems:
+
+1.Centralised.
+2.Distributed.
+
+1)CENTRALISED VCS: It uses centeral server to store all the files. It works on single repository which user can access directly. It always need internet connection. If central server crashed all project data will be lossed since it is centralised.
+
+2)DISTRIBUTED VCS: The data is copied to the local server of the user.Once the data is locally available no internet connection is needed 
+ then after at the time of submition of files you need internet connection.
+
+Advantages of Distributed VCs over centralised VCs:
+1. Compatible.
+2. Open Source.
+3. Speedy.
+4. Non linear.
+
+Major advantages of the DVCS is that evenif the center server is crashed every user have the data on there local server.
+
+Why GIT ? 
+Beacause Git is Distributed version control. Git has a backup of the code. We can easily see the changes made in the code.
+and we can share our code with others. we can work offline.
+
+Some basic operation of GIT:
+
+1.Add
+2.Commit
+3.Checkout
+4.Pull
+5.Push
+
+
+There are several areas like Working directory,staging area ,local repo, remote repo.
+	Add operation moves our files from working directory to staging area. 
+	Commit opration moves files from stagin area to local repo.
+	Pull opration clones files from remote repo to local repo.
+	Push opration moves files from local repo to remote repo.
+
+Commands:
+1) sudo apt -get update:updates installed packages.
+2) sudo apt -get install git : installs git.
+3) git init : creates git repository.
+4) git status : to see the changes.
+5) git add -A : send files to stagging area from working area.
+6) git commit -m "":send files to local repo from stagging area. In "" any msg is written.
+7) git checkout (branchname): to work on existing branch.
+8) git branch -b (branch name): to create branch.
+9) git config --global user.name "username": to add username
+10) git config --global user.email "email": to add email id
+11) git config --global --list : to check email and username
+12) git push (branch name) : push files (**Always check the checkout before pushing).
+
+Thanks for reading.

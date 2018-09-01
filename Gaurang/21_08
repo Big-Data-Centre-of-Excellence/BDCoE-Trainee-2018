@@ -1,0 +1,11 @@
+Big Data is analysis of large amount of data which generally can not be handled by traditional data handling softwares.
+
+BIG Data involves 5V's that are:1.Volume:Data is huge in size.
+                                2.Velocity:Data is comming with very much Velocity.
+                                3.Variety:There is lot of Variety in Data.
+                                4.Veracity:Data can be accurate or inaccurate but we want accuracy in Data.
+                                5.Value:Data collected must have some Value.
+
+Hadoop is the method to solve this problem.
+It uses HDFS(Hadoop Distributed File System), which breaks the data into parts(eg 128MB)and processes it further.
+We also have some other Techs for Big Data. Some popular ones are:Yarn,Spark,PIG,HIVE.

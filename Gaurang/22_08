@@ -1,0 +1,29 @@
+Hadoop is a Open Source cluster Computing Framework.
+
+It uses Horizontal Scaling which focuses on inc hardware than improving single system.
+
+It has 2 major parts to study:1. HDFS.
+                              2. Map/REDUCE.
+
+
+In HDFS we fragment the data into 64MB files for Hadoop1.0, into 128MB for Hadoop2.0.
+
+
+
+MAP/REDUCE:-MAP is to break into prats.
+            Reduce is to join them as peer requirements.
+
+hadoop1.0 has following daemons:
+1.Name Node: It is the place which manages the info that where which info is stored.
+2.Secondary Name Node: It is the secondary place kept for backing up original Name Node's Data.
+3.Task Tracker: It regularly checks wether the Job Tracker is working perfecty or not.
+4.Job Tracker:It has to perform Job Scheduling and Job Monitoring. It's work is to perform the desired data job at data node.
+
+
+
+Hadoop 1.0 has some following Drawbacks:-
+1.Single Point of Failure:Consider if Job Tracker fails whole Task or Procerss fails.
+2.Secondary Name Node could not takeover Name Node's place in case of Name Node's Failure.
+3.Static Configuration o Allotment of CPU cores for Daemons working.
+4.Limit of Jobs:Job tracker can handle max. 40000 tasks at a time.
+

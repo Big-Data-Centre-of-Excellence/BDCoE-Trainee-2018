@@ -1,0 +1,35 @@
+
+Date :01/09/18
+
+Big Data as the term itself reveals its meaning, large amount of data. 
+
+5 characterstics of Big data:-
+
+1. Volume : This implies to large amout of data generating all the time by banking, social networking etc.
+2. Variety : This implies to data generating in different different formates. ex txt files, images, Videos etc.
+3. Velocity : This implies to rate at which the data is getting generated.
+4. Value : This implies that what information we can extract from the data we are collecing.
+5. Veracity : This means that what amount of accuracy we have in data we are collecing.
+
+Types of DATA:
+
+1: Structure data.
+2. Semi-Structture data.
+3. Unstructure data.
+
+1. STRUCTURE DATA : This refers to all the data which are stored and processed in a well defined formates. This type of data is process by SQL (Structure query language).
+2. SEMI-STRCUTURE : This refers to the type of data which are not in well formate but little formates can be seen. eg XML files.
+3. UNSTRUCTURE DATA : This refers to the data which have no formate eg.images, videos.
+
+When the data is in small amount it is easy to store and process on that data but when the amount increases the difficulties also increases.
+ 
+PROBLEMS WITH BIG-DATA:
+1. STORAGE : It is easy to store the data of 1GB, 10GB, 1TB, 2TB but when amount increases to 1000tb it is really very hard to store since each and every data is equally important to other we can't negotiate with the loss of any data therefore we need to store all of the data. 
+2. PROCESSING : Since the amount is increased the processing also becomes very tough.
+
+Every problems comes with its solution we just need to find it out. So what's the solution? 
+The solution is HADOOP.
+
+Thank you for reading. 
+
+Question 1. What are the problems of big data except Storage and processing?

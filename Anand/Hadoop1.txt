@@ -1,6 +1,18 @@
-Day 22/08/18
+01/09/2018
 
-HDFS: Hadoop distributed file system, it is file system used for storage of large amount of data as in normal pc we have NTFS type, for storage of small amount of data. HDFS is a open source cluster framework.
+What is Hadoop?
+
+1. HADOOP is a open source tool which handle the BIG DATA.
+2. IT is the base of big data applications.
+3. It is written in java programming language.
+4. It works on mster slave architecture.
+5. It is framewok based.
+6. It stores data in HDFS(Hadoop distributed files system).
+7. It is based on batch files processing.
+8. Stores and process all type of data.
+
+
+HDFS: Hadoop distributed file system, it is file system used for storage of large amount of data as in normal pc we have NTFS type(windows), for storage of small amount of data. HDFS is a open source cluster framework.
 
 Open-Source : Open-source means we can contribute in changing. We can see its code, and can modify.
 Cluster : It is a group of computers.
@@ -20,7 +32,7 @@ Working:
 
 NAME NODE(NN): It stores META data i.e data about data. In simple language if consider us as data then people who know adress of ours they are 			META data. Name node stores all the info about how and where the data is stores in data nodes. It consist of two files editlog 			and fsImage.
 		EditLog file : It has record of every change you have made since NAME Node is created.
-		FsImage : It 
+		FsImage : ?? 
 DATA NODE(DN): It actually stores real data. It sends heart-beats( signals) after every 3sec to JT.
 
 Job Tracor(JT): 1) Scheduling.
@@ -28,4 +40,15 @@ Job Tracor(JT): 1) Scheduling.
 		3) Resource Allocation.
 
 SECONDARY NODE(SNN): 	It is sort of backup but can't be named as backup bacause it can't take over automatically if NAME NODE crashes. Admin 				have to set it as NAME node. It takes Editlog file and FsImage files combines and creates an Updated FsImage file then 				transfer it ot Name Node.
+
+PROBLEMS WITH HADOOP !.0
+1. No automatic take over.
+2. We can not make nodes more than 4000.
+3. No real time processing.
+4. Latency.
+5. It has Job tracker to perform many activities.
+6. It has the static map and reduce configuration.
+
+Thank you for reading.
+Question.1 : How does FsImage files stores data? 
 

@@ -1,0 +1,41 @@
+01/090/2018
+
+What is PIG?
+
+Pig is a data flow language platform for the execution of MapReduce Task. Pig uses the latin language. It is internally convert into MapReduce and get executed on HDFS. 1 line of pig code equals 20 lines code MapReduce. 
+
+Pig server checs syntex of the code.
+Optimizer checks logics
+Compiler compiles the code.
+
+It works in two modes :
+1.Local
+2.MapReduce.
+
+If we have to work on Hadoop then it will take data from HDFS then it will store output in HDFS.
+
+FEATURES:
+1. Easy of programming.
+2. Optimising.
+3. Extensibility (It can be easily written ,read and process).
+4. UDF(User defined function): We can easily define function and can use it in our code.
+5. Handles all kind of data i.e Structure and unstructure.
+
+Implementation:
+1. Simple data modules:
+	1.INT
+	2.FLOAT
+	3.DOUBLE
+	4.BYTE 
+	5.CHARARRAY
+2.Complex data modules
+	1.ATOM
+	2.TUPLE
+
+OPERATIONS:
+	Load, Limit, Dump, Avg, Concat, Count, Mean, Max, Filter, Join, Group By
+
+**No need to define the data type.
+**Output can be used as input.
+
+THANK YOU FOR READING.

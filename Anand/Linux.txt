@@ -1,9 +1,9 @@
-Day 19/08/18.
-Today I learned about Linux.
+01/09/2018
+
 Linux: It is a kernal, not operating system.
 Kernal : Heart of operating system.
 Ubuntu : It is an operating system.
-Operating system :It is an interface between user and hardware.
+Operating system :Operating system is a set of program which act as an interface between the hardware and the user.
 
 sudo: superuser permission
 banner "": print banner
@@ -44,4 +44,4 @@ espeak		: make terminal speak
 mplayer		: Navigate to video file directory { mplayer -vo caca videofile.mp4}
 
 
-Peace. Thanks for reading.
+Thanks for reading.

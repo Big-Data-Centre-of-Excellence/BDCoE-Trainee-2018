@@ -1,0 +1,28 @@
+01/09/2018
+
+Question.How can we use multiple OS?
+
+Solutions: 
+1. Buy multiple computers : More computers, more bill and maintanance cost. It is a costly solution and we don't adopt a costly solution as log as we don't have have a reasanable solution and thankfully we have.
+  
+2. Multiple boots: It splits the RAM memory and which decreases the perfomance of the system.
+
+3. Virtualization.
+
+Now what is Virtualization?
+
+Virtualization is a technique by which we can use multiple desired OS. Instead of doing multiple boots we put a layer of virtalization over a the original OS and the install desired OS on it. The are many software used for this perpose.For windows we have VirtualBox and VM ware.
+  
+Need of Virtualization:
+1. Saves money.
+2. Ease of recovery.
+3. Enhance security.
+
+Advantages:
+
+1. Bill and maintanance cost is solved.
+2. Required less space.
+3. We can easily create snapshots.
+4. We can quickly switch.
+
+Thank you for reading.

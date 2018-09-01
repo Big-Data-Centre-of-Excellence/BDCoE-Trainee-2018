@@ -1,0 +1,32 @@
+ 01/09/2018
+
+The idea of releasing a new version of hadoop is to overcome the limitation of Hadoop1.
+
+HADOOP 2.0 consist of 5 daemons:
+
+1. Active NameNode
+2. Passive NameNode
+3. Resource manager
+4. Node Manager
+5. Application Manager
+
+In HADOOP 2.0 whole concept of MapReduce is is being discard instead we use YARN(Yet another resource navigator).
+
+Features of Hadoop2.0:
+1. High Availibility.
+2. Supports multiple programming language.
+3. 10000 Namenode can be created.
+4. AutoMatic take over : In case the active namenoode fails the passive namenode will automatically takeover.
+5. Multithreading concept.
+6. Task failure is manages by the app master.
+7. If Container fails node manager will lainch a new container at same system.
+8. If the node manger fails app manager will launch the task again.
+
+Fault Tolerance :
+	It is the capbility of to tolerate the occurance of the fault.The Data is divided into many blocks and then have many copies on different nodes. So if any node goes down, data retrieval can be done through other nodes. In this way fault tolerance is achieved.
+
+Resource manager : This daemon process runs on master node. It is responsible for the scheduling the task. It communicates between NodeManager and slave Nodes. It uses two other processes named Application Manager and Scheduler for MapReduce task and resource management.
+
+Node Manager: his daemon process runs on slave nodes. t is responsible for coordinating with Resource Manager.It uses other daemon process like Application Master and Container for MapReduce task scheduling and execution on the slave node. It also report to the resource manager.
+
+Thank you for reading.

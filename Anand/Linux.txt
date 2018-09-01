@@ -1,0 +1,47 @@
+01/09/2018
+
+Linux: It is a kernal, not operating system.
+Kernal : Heart of operating system.
+Ubuntu : It is an operating system.
+Operating system :Operating system is a set of program which act as an interface between the hardware and the user.
+
+sudo: superuser permission
+banner "": print banner
+bc : for calculation
+date : to display date
+cal : to display calender
+clear : to clear
+echo "": to print 
+whoami: to check self detail
+uname : to check name of username
+passwd : to change password
+mkdir : make folder
+cd : change directory
+cd ..: back to previous directory
+cd : back to parent directory
+ls : list item
+ls-l : long list
+rmdir : remove directory
+cp from to: copy
+mv from to : move
+chmod : change mode
+chown : change ownership
+tar : to zip
+
+Some Cool commands
+cowsay ""	: print cow msg
+cowsay -l	: help
+cowsay -f	: use its functinality
+cmatric		: print matrix
+rev  	  	: reverse text (first run rev command then type)
+yes /message/	: for infinite loop
+factor number	: for factors
+xcowsay		: for gui cow
+xeyes		: for gui eyes
+asciiviewer	: to convert picture into ascii { first install 'aview' then run command asciiview Tux.png -driver curses}
+bb 		: AA project
+espeak		: make terminal speak 
+mplayer		: Navigate to video file directory { mplayer -vo caca videofile.mp4}
+
+
+Thanks for reading.

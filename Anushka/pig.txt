@@ -1,0 +1,26 @@
+                              APACHE PIG
+
+
+1. Apache Pig is an abstraction over MapReduce. It is a tool/platform which is used to analyze larger sets of data.
+2. Pig provides a high-level language known as Pig Latin.
+3. We need to write scripts using Pig Latin language. All these scripts are internally converted to Map and Reduce tasks.
+4. Why pig?
+  ->Using Pig Latin, programmers can perform MapReduce tasks easily without having to type complex codes in Java.
+  ->uses multi-query approach, thereby reducing the length of codes(i.e.1 pig command is almost equal to 20 lines of MR code.
+  ->Pig Latin is SQL-like language and it is easy to learn.
+  ->provides many built-in operators to support data operations like joins, filters, ordering, etc.
+  ->also provides nested data types like tuples, bags, and maps that are missing from MapReduce.
+5. Features-:
+  ->rich set of operators
+  ->ease of programming
+  ->user defined functions
+  ->handles all kind of data
+6. Applications-:
+  ->To process huge data sources such as web logs.
+  ->To perform data processing for search platforms.
+  ->To process time sensitive data loads.
+7. Components-:
+   ->Parser- Initially the Pig Scripts are handled by the Parser. It checks the syntax of the script, does type checking, and other miscellaneous checks.
+   ->Optimizer- carries out the logical optimizations such as projection and pushdown.
+   ->Compiler- The compiler compiles the optimized logical plan into a series of MapReduce jobs.
+   ->Execution engine- these MapReduce jobs are executed on Hadoop producing the desired results.

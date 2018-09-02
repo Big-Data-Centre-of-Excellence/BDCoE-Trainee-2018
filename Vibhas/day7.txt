@@ -1,0 +1,54 @@
+Spark:
+Spark uses a master/worker architecture.All of the code is written on master node. And executed on worker node.
+
+Spark is a cluster computing platform.
+Spark performs computation in memory and avoids multiple inputs and outputs which reduces the speed.
+
+Features of Apache Spark: 
+                         a)Nearly realtime processing.
+                         b)Lazy evaluation.
+                         c)Fault Tolerance.
+		         d)Faster data processing than Hadoop Map-Reduce.
+
+Apache Spark Architecture is based on two main components-
+
+    Resilient Distributed Datasets (RDD)
+    Directed Acyclic Graph (DAG)
+
+Resilient Distributed Datasets (RDD):
+It is basically a data structure.Each dataset in RDD is divided into logical partitions, which may be computed on different slave nodes of the cluster. 
+Spark RDD’s support two different types of operations – 
+Transformations(transfer of memory spaces) 
+Actions(the execution commands).
+It is immutable that is it can be modified but can't be edited.
+As we can't directly access to any data structure, we need an object for RDD to access called SC(SPARK CONTEXT).
+
+By transformation new RDD is created from existing RDD.
+                        _____
+                     __|__RDD|
+                 ___|RDD  |__|
+                | RDD |___|
+                |_____|
+
+ 
+Directed Acyclic Graph (DAG):
+It shows information of all data transformation in RDD. It performs data optimization. 
+Lazy Processing:
+According to this, the computation is done internally and the output of the data processing is not shown until the user asks for it through "filter1.collect".
+
+Spark Driver: Master Node of a Spark Application.
+Driver stores the metadata of all the Resilient Distributed Databases and their partitions.
+
+
+Latency : Time between creation of two RDD layers.
+Fault Tolerance : It is capacity to handle the fault. 
+
+Executer:
+Executer is a responsible for the execution of tasks.
+Executer performs all the data processing i.e..., reading and writing data to external source.
+
+
+
+
+
+

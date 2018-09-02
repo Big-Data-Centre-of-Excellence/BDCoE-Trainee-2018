@@ -1,0 +1,31 @@
+Spark Echosystem : -
+
+   ________   _________   _________   _________
+  |        | |         | |         | |         |
+  | SPARK  | |SPARK    | | ML      | |GRAPH    |
+  | SQL    | |STREAMING| | LIBRARY | |   X     |
+  |        | |         | |         | |         |
+  |        | |         | |         | |         |
+  |        | |         | |         | |         |
+  |________| |_________| |_________| |_________|
+
+  ______________________________________________
+ |                                              |
+ |                 SPARK CORE                   |
+ |                                              |
+
+SPARK ARCHITECTURE :-
+
+1. DRIVER PROGRAMS : - Running inside Master Node manages flow of work.
+2. CLUSTER MANAGER : - Manages cluster data sharing mangement and worker node related tasks.
+3. WORKER NODE : - Excution code and tasks run here.
+
+SPARK MODES :-
+1. Local
+2. Stand Alone
+3. Mesos
+
+Materialization :- it is the transfer of data or information from Memory to Cache Memory.Used for random accessing.
+
+
+

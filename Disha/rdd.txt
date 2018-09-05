@@ -1,0 +1,51 @@
+                                                           RDD
+RDD is a fundamental data structure of apache spark.It stands for resilient distributed dataset
+-> key abstraction of spark in RDD.-> it is distributed collection of elements across cluster nodes.
+->perform parallel operation
+-> RDDs are immutable in nature.
+
+RESILIENT:i.e.. Fault tolerant with the help of RDD lineage graph DAG(self recovery).
+DISTRIBUTED: data recides on multiple nodes.
+DATASET: Record of data you work with.
+
+To achieve fault tolerance RDDs provide a restricted form of shared memory based on coarse grained transformation
+coarse grained mean: we can trasform the whole dataset but not individual element on the dataset.
+fine grained :it means we can transform individual element on the dataset.
+
+-spark evaluated rdd lazily.It is called when needed.The lost data can be easily recovered in spark rdd using lineage graph
+
+RDD transformation: they are function that take rdd as the input and produce onne or many RDDs as the output
+-> they do not change the input RDD but produce on or more new RDDs by applying computations.
+-> transformation are lazy operation on an RDD
+
+RDD does not allow data serialization.
+Dstream internally is continous stream of RDD
+  
+there are 3 ways to create rdd in spark.
+features of RDD:
+-> in memory computation: data is kept in RAM instead of disk and parallel processing.
+->lazy evaluation
+->fault tolerance
+->immutability
+RDD are cache or persist
+persist(): can use various storage level.
+ 
+                                                       SPARK CONTEXT
+it is the entry gate of apache spark functionality. the most important stop o any spark driven appliaction is to generate spark context
+-> allows spark application to access spark cluster with help of resource manager.
+CACHE file:
+
+cahching is the optimization technique.Once we cache the RDD in the memory all future computation will work on the in memory data.
+
+stages:     spark context
+                |
+              mapping
+                |
+               shuffling
+                  |
+              reshuffling
+                 |
+                reducing
+
+DATASET:It is a data structure in spark SQL which is strongly typed and is a map to a relational schema.
+DATAFRAME: as dataset organised into named columns.they are similar to table in relational database. 

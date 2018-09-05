@@ -1,0 +1,45 @@
+                                 SPARK
+spark programming is nothing but a general purpose and fast cluster computing platform.
+it can perform batch processing and stream processing.
+- It integates all big data tools,can access any hadoop data source.
+
+BATCH PROCESSING: works on historical data,where you collect some data and process it later. hadoop only works on batch time processing.
+REAL TIME PROCESSING: processing on current data eg: banking,stock market analysis.
+ 
+In spark immediate process can happen,can deal with batch as well as real time procesing
+-faster processing than map reduce
+
+spark offers:
+
+-> real time stream processing
+-> interactive processing
+-> graph processing
+-> in memory as well batch processing
+
+spark components:
+->spark core
+->spark sql
+->spark streaming
+->spark MLlib
+->spark graphx
+->sparkR
+
+SPARK CORE:
+it is the central component of spark.
+-it provides an execution platform for all spark applictions. generalized platform
+
+SPARK SQL:
+process structured,semi structured and unstructured data using sql.
+
+SPARK STREAMING:
+across live streaming. live streaming are converted into microbatches those are executed on top of spark core.
+
+SPARK MLlib:
+machine learning library delivers both efficiency as well as high quality algorithms.
+
+It is capable of in-memory data processing. it improves the performance of iterative algorithm.
+
+SPARK graphX:
+To process graph data at scale.
+
+

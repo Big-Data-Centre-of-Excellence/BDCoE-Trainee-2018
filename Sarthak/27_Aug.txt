@@ -1,0 +1,39 @@
+SPARK- 
+
+	Apache Spark is an open source parallel processing framework for running large-scale data analytics applications across clustered computers. It can handle both batch and real-time analytics and data processing workloads.
+
+	It is a general purpose cluster computing system. It provides high-level API in Java, Scala, Python, and R. Spark provide an optimized engine that supports general execution graph. It also has abundant high-level tools for structured data processing, machine learning, graph processing and streaming. The Spark can either run alone or on an existing cluster manager.
+
+Features-
+	a. Swift Processing
+	b. Dynamic in Nature
+	c. In-Memory Computation
+	d. Reusability
+	e. Fault Tolerance
+	f. Real-Time Stream Processing
+	g. Lazy Evaluation
+	h. Support Multiple Languages
+
+Spark Context-
+	It is the entry point of Spark functionality. The most important step of any Spark driver application is to generate SparkContext. It allows your Spark Application to access Spark Cluster with the help of Resource Manager.
+
+RDD (Resilient Distributed Dataset)-
+	It is the fundamental data structure of Apache Spark which are an immutable collection of objects which computes on the different node of the cluster. Each and every dataset in Spark RDD is logically partitioned across many servers so that they can be computed on different nodes of the cluster.
+
+	Decomposing the name RDD:
+		* Resilient- Fault-tolerant with the help of RDD lineage graph(DAG) and so able to recompute missing or damaged partitions due to node failures.
+		* Distributed- Since Data resides on multiple nodes.
+		* Dataset- Represents records of the data you work with.
+
+	RDD in Apache Spark supports two types of operations:
+		* Transformation- These are lazy operations on an RDD in Apache Spark. It creates one or many new RDDs, which executes when an Action occurs. Hence, Transformation creates a new dataset from an existing one.
+		* Action- It returns final result of RDD computations. It triggers execution using lineage graph to load the data into original RDD, carry out all intermediate transformations and return final results to Driver program.
+
+DAG (Directed Acyclic Graph)-
+	It is a set of Vertices and Edges, where vertices represent the RDDs and the edges represent the Operation to be applied on RDD. In Spark DAG, every edge is directed from earlier to later in the sequence. On calling of Action, the created DAG is submitted to DAG Scheduler which further splits the graph into the stages of the task.
+	
+	Advantages- 
+		* The lost RDD can be recovered using the Directed Acyclic Graph.
+		* Map Reduce has just two queries the map, and reduce but in DAG we have multiple levels. So to execute SQL query, DAG is more flexible.
+		* DAG helps to achieve fault tolerance. Thus the lost data can be recovered.
+		* It can do a better global optimization than a system like Hadoop MapReduce.

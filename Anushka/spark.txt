@@ -1,0 +1,19 @@
+                                  SPARK
+1. Apache Spark is a unified analytics engine for large-scale data processing.
+2. It is a lightning-fast cluster computing designed for fast computation. It was built on top of Hadoop MapReduce and it extends the MapReduce model to efficiently use more types of computations 
+3. Features-
+  ->Speed-runs workloads 100x faster in memory
+  ->Ease of Use-Spark offers over 80 high-level operators that make it easy to build parallel apps. And we can use it interactively from the Scala, Python, R, and SQL shells.
+  ->Runs Everywhere-Spark runs on Hadoop, Apache Mesos, Kubernetes, standalone, or in the cloud.
+  ->Supports multiple languages - Spark provides built-in APIs in Java, Scala, or Python. Therefore, you can write applications in different languages.
+  ->Advanced Analytics - Spark not only supports ‘Map’ and ‘reduce’. It also supports SQL queries, Streaming data, Machine learning (ML), and Graph algorithms.
+4. The main feature of Spark is its in-memory computation(means instead of some slow disk drives, data is kept in RAM and processed in parallel. By using this we can detect a pattern and can analyze large data) 
+5. Components of spark-
+  ->spark core-all the computations are performed here and it provides in memory computation
+  ->spark SQL-introduces a new data abstraction called SchemaRDD, which provides support for structured and semi-structured data.
+  ->spark streaming-near real time processing
+  ->MLlib-machine learning framework
+  ->GraphX-distributed graph-processing framework
+6. Resilient Distributed Datasets (RDD) is a fundamental data structure of Spark. It is an immutable(no changes can be done) distributed collection of objects. 
+
+

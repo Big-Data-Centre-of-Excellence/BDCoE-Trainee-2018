@@ -1,0 +1,77 @@
+Pig is a tool for Hadoop ecosystem.
+
+Pig was developed by yahoo. Pig is a analysis tool for analysis of larger data set.works at the top of the Hadoop.
+
+And it very simple and easy to use as 200 lines of code of uava is equivalent to 10 lines in pig. It is a gate way are the user who does not not Java in deep and wants to work on Hadoop. Moreover pig is very rich in operators like join filter etc
+
+Pig consist of 2 parts
+
+1) pig Latin : used to express data flow (code)
+
+2) execution environment : it is a environment for execution of pig Latin code
+
+
+
+Pig execution environment is of 2 type
+
+1) local : we have single jvm here, can be activated by
+
+Pig -x local
+
+2) mapreduce mode or Hadoop distributed mode . It is a default mode of pig execution environment , can be activated by
+
+Pig
+
+
+
+Pig architecture:::
+
+
+
+1)We write our code while using grunt shell or pig server
+
+2) now the code written is passed to the passer which checks the syntax error and all and prepare the DAG(logical plan) for the execution
+
+3) optimisers : It optimisers the result of passer by added some methods on that.
+
+4) complier: converts our logical plan or DAG to mapreduce job and to execution engine
+
+5) execution engine executes our job
+
+6) now the executed job is passed to the hdfs
+
+
+
+Features of pig
+
+1)UDFS
+
+2) Easy to program
+
+3) Rich in operators
+
+4) optimization
+
+5) ability to store all type of data
+
+
+
+Pig data type
+
+1) chararray
+
+2) int
+
+3) float.             ----------> scalar data type
+
+4) double
+
+5) bytearray
+
+ 
+
+1) tupple
+
+2) bag .               -----------> complex data type
+
+3) map

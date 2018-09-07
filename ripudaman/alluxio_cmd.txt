@@ -1,0 +1,30 @@
+
+------------ STARTING ALLUXIO /UPLOADING FILE /STARTING SPARK
+                      /COMPUTING FROM ALLUXIO-----------------------------
+cd alluxio
+./bin/alluxio-start.sh local SudoMount
+./bin/alluxio fs copyFromLocal test420.txt /test420
+spark-shell
+var test =sc.testFile("alluxio://localhost:19998/test420").count()
+
+----------- STARTING HADOOP /STARTING SPARK
+                  /COMPUTING FROM HDFS------------------------------------
+
+start-all.sh
+spark-shell
+var test =sc.testFile("hdfs://localhost9000/test420").count()
+
+
+--------------CMDS FOR PUTTING FILE IN
+                         HDFS-----------------------------------------------
+
+hdfs dfs -mkdir /test420
+hdfs dfs -put /home/ripudaman/alluxio.test420.txt /test420
+
+----------------------------------------------------------------------------
+group alluxio:::
+Anushka chaudhary
+Shashank sahai
+Ripudaman singh
+
+

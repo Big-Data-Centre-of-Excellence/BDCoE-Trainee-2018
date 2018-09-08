@@ -1,0 +1,18 @@
+Tf-idf: Term frequency-Inverse document frequency
+	
+	It is a techinique to find out how important a word is to a document or to a collection of documents. So it is an information retrieval technique. Search engines like Google use this algorithm to 		figure out the relevance of pages in its index to a given query.
+		By better understanding how Google utilizes this algorithm, content writers can reverse engineer TF*IDF and thus optimize the content of a website to be better for users and search engines.
+		Experts can optimize the keywords in their websites so that it will be ranked higher in the Google Search.
+		
+		TF*IDF is basically a technique that weighs a term’s frequency (TF) and its inverse document frequency (IDF). Each word or term has its respective TF and IDF score. The 			product of the TF and IDF scores of a term is called the TF*IDF weight of that term. Higher the score, more important the word is.
+
+	Tf(Term Frequency):Measure of how frequently a term occurs in a document.
+				TF(t) = (Number of times term t appears in a document) / (Total number of terms in the document).
+
+	Idf(Inverse document frequency): It checks the rarity of a word. If a word is rare, it is more important.
+				IDF(t) = ln(Total number of documents / Number of documents with term t in it).
+
+	
+Tf(t)*Idf(t): If Idf is high, it means the word is rare and if tf is also high, the word has more relevance compared to others. 
+	
+Reverse Engineering on Tf-idf:If a document contains high frequency of a word whose Idf is high, Its tf-idf will be high so it will be ranked higher.

@@ -3,7 +3,7 @@ if(isset($_COOKIE['Amazon']))
 {
 $name="Amazon";
 $visit= $_COOKIE['Amazon']+1;
-$expiry= time() + (10);
+$expiry= time() + (60*60*24);
 setcookie($name,$visit,$expiry);
 }
 else

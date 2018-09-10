@@ -1,0 +1,37 @@
+---------------allocators---------------
+alluxio uses allocators for choosing location for writing new blocks.
+Alluxio uses 3 types of allocators
+
+1>Greedy allocator ---> allocate the new block to the first storage directory
+that has the sufficient space.
+
+2>MaxFree allocators ---> allocate the block in the directory with most free 
+space 
+
+3>Round robin allocator --->allocate the block in the highest tier with space
+the directory is chosen by round robin [-- It is a algo of choosing all
+ directory in a group equally in a cyclic order  -- ]
+
+-----------evictors-----------------------
+alluxio uses evictors to decide which block to be moved to the lower tiers 
+different evictors are:
+
+1> partial lru evictors:
+eviction is based on least -recently used with max free space
+2> lru evictors:
+ evicts the least recently used block until it attain the  required size fred
+3> greedy evictors:
+evicts the arbitary block until the required size is freed
+4> lrfu evictors:
+evicts the least recently used and the least frequently used block.
+
+-------------security in alluxio----------------------------------
+
+For security alluxio have currently two features
+1) Authentication : alluxio file system recognize and verify the user
+ accessing it.
+2)Authorization : alluxio file system can control the user's acces.
+
+----------------------------------------------------------------------
+ 
+ 

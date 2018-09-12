@@ -1,0 +1,96 @@
+##First download apache storm tar file.
+
+Step 1 -Creating storm directory.Open a terminal.
+$ sudo mkdir /usr/local/storm
+
+Step 2 - Change the ownership and permissions of the directory /usr/local/storm.
+
+$ sudo chown bdcoe /usr/local/storm
+
+$ sudo chmod 777 /usr/local/storm
+
+Step 3 - Move to your downloads
+$ cd /Downloads
+
+
+Step 4 - Untar the apache-storm-0.10.0.tar.gz file.
+
+$ tar xvf apache-storm-0.10.0.tar.gz (desired version)
+
+Step 5 - Move the contents of apache-storm-0.10.0 folder to /usr/local/storm
+
+$ mv apache-storm-0.10.0/* /usr/local/storm
+
+Step 6 - Change the directory to /usr/local/storm
+
+$ cd /usr/local/storm
+
+Step 7 - Create /data, /data/nimbus and /data/supervisor directories.
+
+$ sudo mkdir /usr/local/storm/data
+$ sudo mkdir /usr/local/storm/data/nimbus
+$ sudo mkdir /usr/local/storm/data/supervisor
+
+Step 8 - Change the ownership and permissions of the directory /data, /data/nimbus and /data/supervisor directories.
+
+$ sudo chown bdcoe /usr/local/storm/data
+$ sudo chown bdcoe /usr/local/storm/data/nimbus
+$ sudo chown bdcoe /usr/local/storm/data/supervisor
+
+$ sudo chmod  777 /usr/local/storm/data
+$ sudo chmod  777 /usr/local/storm/data/nimbus
+$ sudo chmod  777 /usr/local/storm/data/supervisor
+
+Step 12 - Change the directory to /usr/local/storm/conf
+
+$ cd /usr/local/storm/conf
+
+Step 13 - Edit storm.yaml file.
+
+$ gedit storm.yaml
+
+Step 14 - Add these below lines to storm.yaml file. Save and close.
+
+storm.zookeeper.servers: 
+- "localhost"
+storm.local.dir: "/usr/local/storm/data"
+nimbus.host: "localhost"
+nimbus.thrift.port: 49627
+storm.zookeeper.port: 2181
+supervisor.slots.ports:
+- 6700
+- 6701
+- 6702
+- 6703
+
+Step 15 - Start ZooKeeper. Open a new terminal and start zookeeper.
+
+$ /usr/local/zookeeper/bin/zkServer.sh start
+
+Step 16 - Open a new terminal. Change the directory to /usr/local/storm
+
+$ cd /usr/local/storm
+
+Step 17 - Start nimbus
+
+$ ./bin/storm nimbus
+
+Step 18 - Open a new terminal. Change the directory to /usr/local/storm
+
+$ cd /usr/local/storm
+
+Step 19 - Start supervisor
+
+$ ./bin/storm supervisor
+
+Step 20 - Open a new terminal. Change the directory to /usr/local/storm
+
+$ cd /usr/local/storm
+
+Step 21 - Start web UI
+
+$ ./bin/storm ui
+
+Step 22 - Check the web UI here. Open a browser and type the following URL.
+
+http://localhost:8080

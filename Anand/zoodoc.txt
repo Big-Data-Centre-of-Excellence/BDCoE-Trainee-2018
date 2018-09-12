@@ -1,0 +1,47 @@
+## First download zookeeper tar file. 
+## Go into the directory where the zookeeper is downloaded.
+$ tar xvf zookeeper-3.4.13(desired version).
+
+$ sudo mv zookeeper-3.4..13 /usr/local/zookeeper
+
+$ sudo chown bdcoe:bdcoe /usr/local/zookeeper
+
+$ sudo gedit ~/.bashrc
+
+## Set the zookeeper home path
+
+# Set ZOOKEEPER_HOME
+export ZOOKEEPER_HOME=/usr/local/zookeeper
+export ZOOKEEPER_CONF_DIR="$ZOOKEEPER_HOME/conf"
+export ZOOKEEPER_CLASSPATH="$ZOOKEEPER_CONF_DIR"
+export PATH=$PATH:$ZOOKEEPER_HOME/bin
+
+## Save and exit
+
+$ source ~/.bashrc
+
+## Create zoo.cfg
+
+$ sudo gedit /usr/local/zookeeper/conf/zoo.cfg
+
+## Add below 3 lines
+
+tickTime=2000
+dataDir=/var/zookeeper
+clientPort=2181
+
+## Save and exit
+
+$ sudo mkdir -p /var/zookeeper
+
+$ sudo chown bdcoe:bdcoe /var/zookeeper
+
+$ echo “1” > /var/zookeeper/zookeeper_server.pid
+
+## Start Zookeeper
+
+$ zkServer.sh start
+
+## Stop Zookeeper
+
+$ zkServer.sh stop

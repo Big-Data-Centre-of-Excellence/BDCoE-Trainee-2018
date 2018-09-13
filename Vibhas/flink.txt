@@ -1,0 +1,121 @@
+Setup: Download and Start Flink
+
+Flink runs on Linux, Mac OS X, and Windows. To be able to run Flink, the only requirement is to have a working Java 8.x installation.
+
+You can check the correct installation of Java by issuing the following command:
+
+java -version
+
+If you have Java 8, the output will look something like this:
+
+java version "1.8.0_111"
+Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)
+
+
+*Download a binary from the downloads page. You can pick any Hadoop/Scala combination you like. If you plan to just use the local file system, any Hadoop version will work fine.
+    Go to the download directory.
+    Unpack the downloaded archive.
+
+$ cd ~/Downloads        # Go to download directory
+$ tar xzf flink-*.tgz   # Unpack the downloaded archive
+$ cd flink-1.6.0
+
+Start a Local Flink Cluster
+
+$ ./bin/start-cluster.sh  # Start Flink
+
+You can also verify that the system is running by checking the log files in the logs directory:
+
+$ tail log/flink-*-standalonesession-*.log
+INFO ... - Rest endpoint listening at localhost:8081
+INFO ... - http://localhost:8081 was granted leadership ...
+INFO ... - Web frontend listening at http://localhost:8081.
+INFO ... - Starting RPC endpoint for StandaloneResourceManager at akka://flink/user/resourcemanager .
+INFO ... - Starting RPC endpoint for StandaloneDispatcher at akka://flink/user/dispatcher .
+INFO ... - ResourceManager akka.tcp://flink@localhost:6123/user/resourcemanager was granted leadership ...
+INFO ... - Starting the SlotManager.
+INFO ... - Dispatcher akka.tcp://flink@localhost:6123/user/dispatcher was granted leadership ...
+INFO ... - Recovering all persisted jobs.
+INFO ... - Registering TaskManager ... under ... at the SlotManager.
+
+Read the Code
+
+You can find the complete source code for this SocketWindowWordCount example in scala and java on GitHub.
+
+    Scala
+    Java
+
+
+*EXAMPLE:-
+object SocketWindowWordCount {
+
+    def main(args: Array[String]) : Unit = {
+
+        // the port to connect to
+        val port: Int = try {
+            ParameterTool.fromArgs(args).getInt("port")
+        } catch {
+            case e: Exception => {
+                System.err.println("No port specified. Please run 'SocketWindowWordCount --port <port>'")
+                return
+            }
+        }
+
+        // get the execution environment
+        val env: StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
+
+        // get input data by connecting to the socket
+        val text = env.socketTextStream("localhost", port, '\n')
+
+        // parse the data, group it, window it, and aggregate the counts
+        val windowCounts = text
+            .flatMap { w => w.split("\\s") }
+            .map { w => WordWithCount(w, 1) }
+            .keyBy("word")
+            .timeWindow(Time.seconds(5), Time.seconds(1))
+            .sum("count")
+
+        // print the results with a single thread, rather than in parallel
+        windowCounts.print().setParallelism(1)
+
+        env.execute("Socket Window WordCount")
+    }
+
+    // Data type for words with count
+    case class WordWithCount(word: String, count: Long)
+}
+
+Run the Example
+
+Now, we are going to run this Flink application. It will read text from a socket and once every 5 seconds print the number of occurrences of each distinct word during the previous 5 seconds, i.e. a tumbling window of processing time, as long as words are floating in.
+
+    First of all, we use netcat to start local server via
+
+$ nc -l 9000
+
+    Submit the Flink program:
+
+$ ./bin/flink run examples/streaming/SocketWindowWordCount.jar --port 9000
+Starting execution of program
+
+Words are counted in time windows of 5 seconds (processing time, tumbling windows) and are printed to stdout. Monitor the TaskManager’s output file and write some text in nc (input is sent to Flink line by line after hitting ):
+
+$ nc -l 9000
+lorem ipsum
+ipsum ipsum ipsum
+bye
+
+The .out file will print the counts at the end of each time window as long as words are floating in, e.g.:
+
+$ tail -f log/flink-*-taskexecutor-*.out
+lorem : 1
+bye : 1
+ipsum : 4
+
+To stop Flink when you’re done type:
+
+$ ./bin/stop-cluster.sh
+
+
+--------------------------------X-----------------------------------------X----------

@@ -27,7 +27,7 @@ input{
 	border-radius: 5px;
 	border: none;
 }
-input[type=text],input[type=email],input[type=number],input[type=stid],input[type=year]{
+input[type=text],input[type=email],input[type=number],input[type=stid],input[type=year],input[type=comment]{
 	width: 90%;
 	margin: 10px;
 }

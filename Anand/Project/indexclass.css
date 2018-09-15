@@ -36,7 +36,8 @@ nav ul li a{
 	font-size: 25px;
 }
 .edit2:hover{
-
+	transiotion-delay: 0.5s;
+	transition-duration: 0.5s;
 	background-color: #dd7e26;
 	padding: 12px;
 	border-radius: 10px;

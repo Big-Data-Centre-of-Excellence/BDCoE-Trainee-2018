@@ -41,6 +41,15 @@ nav ul li a{
 	background-color: #dd7e26;
 	padding: 12px;
 	border-radius: 10px;
-}
+}.edit1,ul,li,a{
+	display: inline;
+	padding: 0px;
+	float: right;
+    font-family: 'Aldrich', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
 
+
+}
 

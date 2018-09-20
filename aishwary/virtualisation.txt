@@ -1,0 +1,10 @@
+Topic-Virtualisation-Introduction and Application
+
+Basically making anything virtual look like real is known as virtualisation.The best example of virtualisation is the disk partition in our computer.We make several partitions in our disk space so that it looks like we have more than one disk while actually there is only one disk.
+
+In a client server system suppose we have a server of size 32GB and one client is using only 4GB space so we are alloting 8 different clients to work on the same server.Doing this we can use the space efficiently but in this system any one of the 8 clients can use the data of any other client without his permission.This is a big security issue.
+Suppose another case where a server of size 32GB is used by a single client who needs only 4GB of space to ensure security.But in this case we can clearly see that a large amount of Server space (which takes a large amount of money too) is wasted to ensure the security which is also not good.
+
+To remove this problem virtualisation helped very much.Using virtualisation techniques we can devide the server in several small virtual servers.In this way several parts of the server can be assigned personally to the clients.In this way the whole space of the server is used efficiently and security is assured at the same time as the virtual partition does not allow other clients to peep into ones data.
+
+

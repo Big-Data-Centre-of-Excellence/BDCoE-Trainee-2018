@@ -33,7 +33,7 @@ while($row=mysqli_fetch_assoc($query))
 				$mail->Host = 'smtp.gmail.com';
 				$mail->SMTPAuth = true;
 				$mail->Username = 'techiehere08@gmail.com';
-				$mail->Password = '*******';
+				$mail->Password = '76683594457';
 				$mail->SMTPSecure = 'tls';  
 				$mail->Port = 587;
 				$mail->setFrom('techiehere08@gmail.com', 'BDCOE');
@@ -46,7 +46,7 @@ while($row=mysqli_fetch_assoc($query))
 				echo "<div class=display> '.$error.'  </div>";
 				}
 				else
-				echo " <div class=display> Message Sent </div>";
+				echo " <div class=display> Email Sent </div>";
 				}
 			    }//mail over
                     {
@@ -58,7 +58,7 @@ while($row=mysqli_fetch_assoc($query))
                 // Message details
                 $numbers = array($num);
                 $sender = urlencode('TXTLCL');
-                $message = rawurlencode('HAPPY BIRTHDAY');
+                $message = rawurlencode('HAPPY BIRTHDAY ,'.$name);
                
                 $numbers = implode(',', $numbers);
                
@@ -79,16 +79,17 @@ while($row=mysqli_fetch_assoc($query))
   
 				      } //sms over*/
 				      {//facebook
+				      	$img='img/'.$name.'.jpg';
 						$fb = new Facebook\Facebook([
 						'app_id' => '247169872653933',
 						'app_secret' => '4f0795b718156df18e9614d8b0021b3e',
 						'default_graph_version' => 'v3.1',
 						]);
-						$pageAccessToken = 'EAADgzLh1bm0BAI4iRAConbWJZCJeO0MEXZAZAzrKcHtqj25onLlwpU8w5ZCP3ZAcI9FKKRFsiSvpOnjyLb8cOzWueGXUPJ02dsg7GDkHvktRsRwIPeico4Imtg3lKcf2ZBZAYraZCbVyTyiaUzWTfOCV4A4wrG0ZCSYZCMZBDGMYuimsqCVZBnzhsVt5uZBb047ZAx4y4ZD';
+						$pageAccessToken = 'EAADgzLh1bm0BAGFfSatTJ5FYoCXZCbBzWSs1dEJIFXUN5m1lisN4IXpMzxiKBN8LalZCe5h55XLaIIEtEGiwmYNlm6UEt3gHROuyVuLrsYGoN5drDY7rLC622RN4Dq20j6M50b3wE57g8JwSjDSfvVIZAINnGBUt0W1l8tCyrEZCzWzZBGu3MwqA4BH2OIY8jz9wzzTsIYwZDZD';
 						$msg =[
 						'message' => 'Happy Birthday '.$name.', have a good day!',
-						//'source' => $fb->fileToUpload('http://localhost/test/Project/back.jpg'),
-						'url' => 'https://happybirthdaywishesworld.com/wp-content/uploads/2017/12/Happy-birthday-images.jpg',
+						'source' => $fb->fileToUpload($img),
+						//'url' => 'https://happybirthdaywishesworld.com/wp-content/uploads/2017/12/Happy-birthday-images.jpg',
 						];
 						try
 						{
@@ -111,4 +112,3 @@ while($row=mysqli_fetch_assoc($query))
 	        }
 }
  ?>
-

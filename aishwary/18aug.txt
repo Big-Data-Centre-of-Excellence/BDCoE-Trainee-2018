@@ -1,0 +1,20 @@
+Topic-GIT
+
+
+GIT is a version control system which is used to keep track of changes commited in any computer file.It is an open source system which is free of cost.It was created by Linus Torvalds in 2005 for the development of Linux Kernel to get contributions from other kernel developers.It is also very helpful in coordinating work among multiple people.It is primarily used for source code management in software development and can be used to keep track of changes in any kind of computer files.It is helpful in projects with non-linear workflow or distributed type workflow as multiple people can make branches from the main project and do the work together.Two or more people can work on the very same part of the project individually and afterwards they can side by side compare there work and select the better one.It also makes merging of the project into one very easy.
+
+Github is the main repository where we save all our works using GIT
+
+Some commands used in git are-
+1.git init-to initialise git
+2.git clone-to make a clone of the repository where we are going to save our progress
+3.git config --global user.name"user_name"
+  git config --global user.email"namme@email.com"-for configuration purpose
+4.git status-to check the status of the files added or commited or which are still to be added
+5.git add filename.ext-to add the file in the local repository for tracking
+6.git checkout-b branchname-to create a branch in the main project line
+7.git branch-to check on which branch we are currently working
+8.git remote add origin address-to give the address of the repository where we will be sending     our works.
+9.git remote -v-to check the origin
+10.git push -u origin master(or branch)-to push the file to the main repository
+11.git commit -m "message"-to record the changes made in the local repository

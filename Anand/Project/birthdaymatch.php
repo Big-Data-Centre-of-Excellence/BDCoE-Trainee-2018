@@ -17,23 +17,33 @@ while($row=mysqli_fetch_assoc($query))
     $name=$row['name'];
     $num=$row['number'];
     $month = date('m', strtotime($date));
+    $year=$row['year'];
     $day=date('j',strtotime($date));
+    { 
+	$messages = array(
+		'Wishing you a day filled with happiness and a year filled with joy. Happy birthday! to '.$name.'of'. $year. ' year',
+		'Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday! to '.$name.' of '. $year. ' year',
+		'Hope your special day brings you all that your heart desires! Here’s wishing you a day full of pleasant surprises! Happy birthday! to '.$name.'of '. $year. ' year',
+		'On your birthday we wish for you that whatever you want most in life it comes to you just the way you imagined it or better. Happy birthday! to '.$name.' of '. $year. ' year',
+	);
 
+	}
         if($bmonth==$month && $bdate==$day)
 { 
 				        //mail to the users
 				          {
 				            
 				{
+				$m=$messages[rand(0, count($messages) - 1)];
 				$to_id = $email;
 				$subject =  'Birthday Wish';
-				$message = 'Happy Birthday '.$name.', have a good day!';
+				$message = $m;
 				$mail = new PHPMailer(true);
 				$mail->isSMTP();
 				$mail->Host = 'smtp.gmail.com';
 				$mail->SMTPAuth = true;
 				$mail->Username = 'techiehere08@gmail.com';
-				$mail->Password = '*******';
+				$mail->Password = '76683594457';
 				$mail->SMTPSecure = 'tls';  
 				$mail->Port = 587;
 				$mail->setFrom('techiehere08@gmail.com', 'BDCOE');
@@ -46,19 +56,20 @@ while($row=mysqli_fetch_assoc($query))
 				echo "<div class=display> '.$error.'  </div>";
 				}
 				else
-				echo " <div class=display> Message Sent </div>";
+				echo " <div class=display> Email Sent </div>";
 				}
 			    }//mail over
-                    {
+                   {
                     //sms
                           
                 // Account details
                 $apiKey = urlencode('8EDXM/HRXX8-6SOZiEONiAwm6ixJtEBlP7Wglnc79h');
                 
                 // Message details
+                $m=$messages[rand(0, count($messages) - 1)];
                 $numbers = array($num);
                 $sender = urlencode('TXTLCL');
-                $message = rawurlencode('HAPPY BIRTHDAY');
+                $message = rawurlencode($m);
                
                 $numbers = implode(',', $numbers);
                
@@ -79,16 +90,18 @@ while($row=mysqli_fetch_assoc($query))
   
 				      } //sms over*/
 				      {//facebook
+				      	$m=$messages[rand(0, count($messages) - 1)];
+				      	$img='img/'.$name.'.jpg';
 						$fb = new Facebook\Facebook([
 						'app_id' => '247169872653933',
 						'app_secret' => '4f0795b718156df18e9614d8b0021b3e',
 						'default_graph_version' => 'v3.1',
 						]);
-						$pageAccessToken = 'EAADgzLh1bm0BAI4iRAConbWJZCJeO0MEXZAZAzrKcHtqj25onLlwpU8w5ZCP3ZAcI9FKKRFsiSvpOnjyLb8cOzWueGXUPJ02dsg7GDkHvktRsRwIPeico4Imtg3lKcf2ZBZAYraZCbVyTyiaUzWTfOCV4A4wrG0ZCSYZCMZBDGMYuimsqCVZBnzhsVt5uZBb047ZAx4y4ZD';
+						$pageAccessToken = 'EAADgzLh1bm0BAFANsEgmDKWpvvtBbBjFiFz6ZCyVI9NAN6sOvhKeRYbxRhBdrCRIS0iorYiZCzy3EKU48VevtYME3ZBZBvMCX3RIE5UnBP8HCj6EiZA7IBFma5LAA1QKbfVDAH6hLosndH9EWX7gyZBYSM66mShZCxn95WuoLFoZCEfc96jLZABZCTpIyAFp6hL3MTFws3lnEsZBwZDZD';
 						$msg =[
-						'message' => 'Happy Birthday '.$name.', have a good day!',
-						//'source' => $fb->fileToUpload('http://localhost/test/Project/back.jpg'),
-						'url' => 'https://happybirthdaywishesworld.com/wp-content/uploads/2017/12/Happy-birthday-images.jpg',
+						'message' =>$m,
+						'source' => $fb->fileToUpload($img),
+						//'url' => 'https://happybirthdaywishesworld.com/wp-content/uploads/2017/12/Happy-birthday-images.jpg',
 						];
 						try
 						{
@@ -111,4 +124,3 @@ while($row=mysqli_fetch_assoc($query))
 	        }
 }
  ?>
-

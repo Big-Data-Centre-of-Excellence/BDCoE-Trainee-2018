@@ -1,0 +1,15 @@
+form{
+	margin-left: 500px;
+}
+h1,h2,p{
+    color: #19ffde;
+}
+button{
+	height: 45px;
+	border-radius: 10px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+button:hover{
+	color: white;
+}

@@ -11,7 +11,17 @@ while($row=mysqli_fetch_assoc($query))
     $id=$row['id'];
     $stid=$row['stid'];
     $comment=$row['comment'];
-    echo "<h1>".$id.". student id---     ".$stid."           <br>comment-- ".$comment."<br></h1>" ;
+    ?>
+   <form method="POST" action="adminpanel.php"> STUDENT ID: 
+   	<input type="box" name="box" value="<?php echo $stid;?>" readonly="readonly">
+   	Reason:<input type="box" name="box" value="<?php echo $comment;?>" readonly="readonly"> 
+
+   <input type="submit" name="delete" value="DELETE"><?php
+   if(isset($_POST['delete']))
+   {
+   	$dquery="DELETE FROM `deletion` WHERE id='$id'";
+   	$del=mysqli_query($con,$dquery);
+   }?></form><?php
 }
 }
 else{

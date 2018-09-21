@@ -1,9 +1,6 @@
 <?php
-include('dbconn.php');
+$con=mysqli_connect('localhost','root','','data');
 ?>
-
-
-<!DOCTYPE html>
 <html>
 <head>
     <title>LOGIN</title>
@@ -11,8 +8,6 @@ include('dbconn.php');
 </head>
 <body>
     <div class="left">
-
-
     </div>
     <div class="login-page">
         <div class="login-form">
@@ -23,12 +18,8 @@ include('dbconn.php');
                 <button name="login">LOGIN</button>
 
             </form>
-
         </div>
-
-
     </div>
-
 </body>
 </html>
 <?php

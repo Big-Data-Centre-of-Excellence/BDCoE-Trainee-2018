@@ -19,20 +19,25 @@ while($row=mysqli_fetch_assoc($query))
     $month = date('m', strtotime($date));
     $year=$row['year'];
     $day=date('j',strtotime($date));
+    if($year==2)
+    	$suf='nd';
+    else if($year==3)
+    	$suf='rd';
+    else
+    	$suf='th';
     { 
 	$messages = array(
-		'Wishing you a day filled with happiness and a year filled with joy. Happy birthday! to '.$name.'of'. $year. ' year',
-		'Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday! to '.$name.' of '. $year. ' year',
-		'Hope your special day brings you all that your heart desires! Here’s wishing you a day full of pleasant surprises! Happy birthday! to '.$name.'of '. $year. ' year',
-		'On your birthday we wish for you that whatever you want most in life it comes to you just the way you imagined it or better. Happy birthday! to '.$name.' of '. $year. ' year',
+		'Wishing you a day filled with happiness and a year filled with joy. Happy birthday! to '.$name.'of'. $year.$suf. ' year',
+		'Sending you smiles for every moment of your special day…Have a wonderful time and a very happy birthday! to '.$name.' of '. $year.$suf. ' year',
+		'Hope your special day brings you all that your heart desires! Here’s wishing you a day full of pleasant surprises! Happy birthday! to '.$name.' of '. $year. $suf.' year',
+		'On your birthday we wish for you that whatever you want most in life it comes to you just the way you imagined it or better. Happy birthday! to '.$name.' of '. $year. $suf.' year',
 	);
 
 	}
         if($bmonth==$month && $bdate==$day)
-{ 
+			{ 
 				        //mail to the users
-				          {
-				            
+				          {				         
 				{
 				$m=$messages[rand(0, count($messages) - 1)];
 				$to_id = $email;
@@ -59,12 +64,12 @@ while($row=mysqli_fetch_assoc($query))
 				echo " <div class=display> Email Sent </div>";
 				}
 			    }//mail over
-                   {
-                    //sms
-                          
+                  {
+                //sms
+                     
                 // Account details
                 $apiKey = urlencode('8EDXM/HRXX8-6SOZiEONiAwm6ixJtEBlP7Wglnc79h');
-                
+               
                 // Message details
                 $m=$messages[rand(0, count($messages) - 1)];
                 $numbers = array($num);
@@ -73,10 +78,9 @@ while($row=mysqli_fetch_assoc($query))
                
                 $numbers = implode(',', $numbers);
                
-                // Prepare data for POST request
+                
                 $data = array('apikey' => $apiKey, 'numbers' => $numbers, "sender" => $sender, "message" => $message);
                
-                // Send the POST request with cURL
                 $ch = curl_init('https://api.textlocal.in/send/');
                 curl_setopt($ch, CURLOPT_POST, true);
                 curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
@@ -91,15 +95,15 @@ while($row=mysqli_fetch_assoc($query))
 				      } //sms over*/
 				      {//facebook
 				      	$m=$messages[rand(0, count($messages) - 1)];
-				      	$img='img/'.$name.'.jpg';
+				      	$img='img/'.$stid.'.jpg';
 						$fb = new Facebook\Facebook([
 						'app_id' => '247169872653933',
 						'app_secret' => '4f0795b718156df18e9614d8b0021b3e',
 						'default_graph_version' => 'v3.1',
 						]);
-						$pageAccessToken = 'EAADgzLh1bm0BAFANsEgmDKWpvvtBbBjFiFz6ZCyVI9NAN6sOvhKeRYbxRhBdrCRIS0iorYiZCzy3EKU48VevtYME3ZBZBvMCX3RIE5UnBP8HCj6EiZA7IBFma5LAA1QKbfVDAH6hLosndH9EWX7gyZBYSM66mShZCxn95WuoLFoZCEfc96jLZABZCTpIyAFp6hL3MTFws3lnEsZBwZDZD';
+						$pageAccessToken = 'EAADgzLh1bm0BAKVy5VRkTXJPtsLWhyICz7NDRxkZACInbs5ufBPJJFhXP5WgZBdisPM9VxxJf17go4viCFFxsvYoAxL6RDEJrSBQCGdx5zMXIvqs8B2ZAAPYl6haBRIAwM1TVnBHUuXvZAtmrdb86rb5OrdYUItwrRo0mE6xrHICNllbQsUYjMSFhw1SduM3aSVia3DppwZDZD';
 						$msg =[
-						'message' =>$m,
+						'message' => $m,
 						'source' => $fb->fileToUpload($img),
 						//'url' => 'https://happybirthdaywishesworld.com/wp-content/uploads/2017/12/Happy-birthday-images.jpg',
 						];
@@ -120,7 +124,6 @@ while($row=mysqli_fetch_assoc($query))
 						$graphNode = $response->getGraphNode();
 						echo 'ID:'.$graphNode['id'];
 						} //facebook over
-
 	        }
 }
  ?>

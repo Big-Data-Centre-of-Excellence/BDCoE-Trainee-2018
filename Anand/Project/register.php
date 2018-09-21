@@ -4,7 +4,6 @@
 	<title></title>
 </head>
 <body >
-
 	<div class="moveform">
 		<form method="POST" action="registerdb.php" >
 				<h2>REGISTER</h2>
@@ -36,11 +35,13 @@
 					 <option value="<?php echo $i;?>"> <?php echo $i;?></option>
 					<?php }?>
 				</option>
-			</select></br>
+			</select></br></br>
 			<input type= "radio" name="gender" value="Male" required="required">Male
 			<input type= "radio" name="gender" value="Female" required="required">Female </br>
-			<input type= "submit" name="submit" value="SUBMIT">
+			<input type= "file" name="image" accept="image/*">
+			<a href=""><input type= "submit" name="submit" value="SUBMIT"></a>
 		</form>
 	</div>
+	
 </body>
 </html>

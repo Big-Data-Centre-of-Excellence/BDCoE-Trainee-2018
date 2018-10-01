@@ -11,7 +11,7 @@ In common term big data is generally collection of very large data which may be 
 
 structured:name roll no
 semi-structured:xml file
-unstructured:photos
+unstructured:photos,videos etc
 
 
 doubt:what does the term veracity means?
@@ -20,3 +20,10 @@ some reports says that(from internet):
 ->data generaated in past 2 years is more than the previous history in total.
 ->by 2020,total digital data will grow to 44 zettabytes approx
 1zb=1 trillion gb
+
+#######
+
+Big data is a term defined for data sets that are large or complex that traditional data processing applications are inadequate. Big Data basically consists of analysis zing, capturing the data, data creation, searching, sharing, storage capacity, transfer, visualization, and querying and information privacy.
+What is Big Data?
+
+    Big Data is a collection of large datasets that cannot be adequately processed using traditional processing techniques. Big data is not only data it has become a complete subject, which involves various tools, techniques and frameworks.

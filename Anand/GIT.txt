@@ -52,5 +52,6 @@ Commands:
 10) git config --global user.email "email": to add email id
 11) git config --global --list : to check email and username
 12) git push (branch name) : push files (**Always check the checkout before pushing).
+13) git clone (url).
 
 Thanks for reading.

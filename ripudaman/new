@@ -1,0 +1,43 @@
+PIG-
+
+	Pig is a high level scripting language that is used with Apache Hadoop. Pig enables data workers to write complex data transformations without knowing Java.
+	Pig’s simple SQL-like scripting language is called Pig Latin, and appeals to developers already familiar with scripting languages and SQL.
+	Pig scripts are translated into a series of MapReduce jobs that are run on the Apache Hadoop cluster.
+
+Need of Apache Pig-
+	1. User not having prior knowledge of java can also work with PIG to perform map-reduce jobs which are meant to be written in java. 
+	2. Pig Scripts are sql like language so one can easily learn PIG if he has idea of SQL queries.
+	3. Apache Pig provides many built-in operators to perfoem operations like joins, filters, order by, group by etc. 
+
+Features- 
+	* Rich Set of Operators
+	* Ease of Programming
+	* Optimization opportunities
+	* Extensibility
+	* User Define Functions (UDF’s)	
+	* All types of data handling
+
+
+Apache Pig components-
+
+	Parser-
+		Initially the Pig Scripts are inputed here and they are converted into DAG.
+	Optimizer-
+		The logical plan (DAG) is passed to the logical optimizer for logical optimization.
+	Compiler-
+		The compilation of script into mapreduce codes is done by the compiler.
+	Execution Engine-
+		The job of the execution engine is to execute the program and show the output result.
+
+Apache Pig Execution Modes-
+	Local mode- Here all data is stored in local files and run from a local host or system.There is no need of HDFS.
+	MapReduce mode- Here data processing is done in the Hadoop File System (HDFS).In this mode,the data stored in HDFS is operated by Map-Reduce process when ever query written in Piglatin is executed.
+
+Apache Pig Execution Mechanisms-
+	a. Interactive Mode (Grunt shell)-
+		By using Dump operator, we can enter the Pig Latin statements and get the output, in this shell. 
+	b. Batch Mode (Script)-
+		By writing the Pig Latin script in a single file with the .pig extension.
+	c. Embedded Mode (UDF)-
+		By using User Defined Functions in our script.
+

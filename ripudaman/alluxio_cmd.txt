@@ -21,10 +21,6 @@ var test =sc.testFile("hdfs://localhost9000/test420").count()
 hdfs dfs -mkdir /test420
 hdfs dfs -put /home/ripudaman/alluxio.test420.txt /test420
 
-----------------------------------------------------------------------------
-group alluxio:::
-Anushka chaudhary
-Shashank sahai
-Ripudaman singh
+---------------------------------------------------------------------------
 
-
+Text file of 2MB can hang your system

@@ -1,4 +1,6 @@
 --> i learn about version control system
---> about git and github
+--> about git and github 
 --> expore pushing file in new branch in cloned master branch
 --> creating rapo
+--------------------------------------------------------------------
+This is a update in 1.txt on Tue Oct 8, 2:15:50PM

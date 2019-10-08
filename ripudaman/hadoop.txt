@@ -4,11 +4,13 @@ Hadoop is a framework for the analysis of big data. Hadoop have 2 components.
 
 2) mapreduce . (Processing big data)
 
-
-
-
-
-Hdfs.. It is basically a file storing system. Used to store big file in the form of small cluster. Master slave process is followed. If we are using hdfs for small file storing then it is not worthy. In hdfs suppose a data is of 1TB then it store in different slave having data 128mb. Also the replica of data also take place in Hadoop so the the loss of data can be reduce.
+Hdfs.. It is basically a file storing system.
+ Used to store big file in the form of small cluster.
+ Master slave process is followed.
+ If we are using hdfs for small file storing then it is not worthy.
+ In hdfs suppose a data is of 1TB then it store in different slave having
+ data 128mb. Also the replica of data also take place in Hadoop so
+ the the loss of data can be reduce.
 
 
 
